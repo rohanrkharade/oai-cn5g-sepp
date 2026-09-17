@@ -1,0 +1,390 @@
+# SPDX-License-Identifier: MIT
+
+services:
+######################################################################################
+#                             Roaming Partner A (MCC: 208, MNC: 22)                 #
+######################################################################################
+    mysql-A:
+        container_name: "mysql-A"
+        image: mysql:9.6.0
+        volumes:
+            - ./database/oai_roaming_db_A.sql:/docker-entrypoint-initdb.d/oai_db.sql
+            - ./healthscripts/mysql-healthcheck2.sh:/tmp/mysql-healthcheck.sh
+        environment:
+            - TZ=Europe/Paris
+            - MYSQL_DATABASE=oai_db
+            - MYSQL_USER=test
+            - MYSQL_PASSWORD=test
+            - MYSQL_ROOT_PASSWORD=linux
+        healthcheck:
+            test: /bin/bash -c "/tmp/mysql-healthcheck.sh"
+            interval: 10s
+            timeout: 5s
+            retries: 30
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.131
+
+    oai-nrf-A:
+        container_name: "nrf.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-nrf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-nrf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.136
+
+    oai-udr-A:
+        container_name: "udr.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-udr:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-udr/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            mysql-A:
+                condition: service_healthy
+            oai-nrf-A:
+                condition: service_started
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.134
+
+    oai-udm-A:
+        container_name: "udm.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-udm:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-udm/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            - oai-nrf-A
+            - oai-udr-A
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.135
+
+    oai-ausf-A:
+        container_name: "ausf.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-ausf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-ausf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            - oai-nrf-A
+            - oai-udm-A
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.133
+
+    oai-amf-A:
+        container_name: "amf.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-amf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+            - 38412/sctp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-amf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            mysql-A:
+                condition: service_healthy
+            oai-nrf-A:
+                condition: service_started
+            oai-ausf-A:
+                condition: service_started
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.137
+
+    oai-smf-A:
+        container_name: "smf.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-smf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+            - 8805/udp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-smf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            - oai-nrf-A
+            - oai-amf-A
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.138
+
+    oai-upf-A:
+        container_name: "upf.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-upf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+            - 2152/udp
+            - 8805/udp
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-upf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        cap_drop:
+            - ALL
+        privileged: true
+        depends_on:
+            - oai-nrf-A
+            - oai-smf-A
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.139
+
+    oai-sepp-A:
+        container_name: "sepp.5gc.mnc22.mcc208.3gppnetwork.org"
+        image: oai-sepp:latest
+        expose:
+            - 443/tcp
+            - 80/tcp
+            - 8080/tcp
+        environment:
+            - SSLKEYLOGFILE=/openair-sepp/certs/sslkeylog.log
+        volumes:
+            - ./conf/roaming_config_partnerA.yaml:/openair-sepp/etc/config.yaml
+            - ./conf/certs:/openair-sepp/certs/
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        cap_drop:
+            - ALL
+        privileged: true
+        depends_on:
+            - oai-nrf-A
+        networks:
+            public_netA:
+                ipv4_address: 192.168.71.132
+            public_net_roaming:
+                ipv4_address: 192.168.72.111
+
+######################################################################################
+#                             Roaming Partner B (MCC: 262, MNC: 10)                 #
+######################################################################################
+    mysql-B:
+        container_name: "mysql-B"
+        image: mysql:9.6.0
+        volumes:
+            - ./database/oai_roaming_db_B.sql:/docker-entrypoint-initdb.d/oai_db.sql
+            - ./healthscripts/mysql-healthcheck2.sh:/tmp/mysql-healthcheck.sh
+        environment:
+            - TZ=Europe/Paris
+            - MYSQL_DATABASE=oai_db
+            - MYSQL_USER=test
+            - MYSQL_PASSWORD=test
+            - MYSQL_ROOT_PASSWORD=linux
+        healthcheck:
+            test: /bin/bash -c "/tmp/mysql-healthcheck.sh"
+            interval: 10s
+            timeout: 5s
+            retries: 30
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.131
+
+    oai-nrf-B:
+        container_name: "nrf.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-nrf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-nrf/etc/config.yaml
+            - ./conf/certs:/openair-sepp/certs/
+        environment:
+            - TZ=Europe/Paris
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.132
+
+    oai-udr-B:
+        container_name: "udr.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-udr:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-udr/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            mysql-B:
+                condition: service_healthy
+            oai-nrf-B:
+                condition: service_started
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.134
+
+    oai-udm-B:
+        container_name: "udm.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-udm:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-udm/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            - oai-nrf-B
+            - oai-udr-B
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.135
+
+    oai-ausf-B:
+        container_name: "ausf.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-ausf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-ausf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            - oai-nrf-B
+            - oai-udm-B
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.133
+
+    oai-amf-B:
+        container_name: "amf.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-amf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+            - 38412/sctp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-amf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            mysql-B:
+                condition: service_healthy
+            oai-nrf-B:
+                condition: service_started
+            oai-ausf-B:
+                condition: service_started
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.137
+
+    oai-smf-B:
+        container_name: "smf.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-smf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+            - 8805/udp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-smf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        depends_on:
+            - oai-nrf-B
+            - oai-amf-B
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.138
+
+    oai-upf-B:
+        container_name: "upf.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-upf:latest
+        expose:
+            - 80/tcp
+            - 8080/tcp
+            - 2152/udp
+            - 8805/udp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-upf/etc/config.yaml
+        environment:
+            - TZ=Europe/Paris
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        cap_drop:
+            - ALL
+        privileged: true
+        depends_on:
+            - oai-nrf-B
+            - oai-smf-B
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.139
+
+    oai-sepp-B:
+        container_name: "sepp.5gc.mnc10.mcc262.3gppnetwork.org"
+        image: oai-sepp:latest
+        expose:
+            - 443/tcp
+            - 80/tcp
+            - 8080/tcp
+        volumes:
+            - ./conf/roaming_config_partnerB.yaml:/openair-sepp/etc/config.yaml
+            - ./conf/certs:/openair-sepp/certs/
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        cap_drop:
+            - ALL
+        privileged: true
+        depends_on:
+            - oai-nrf-B
+        networks:
+            public_netB:
+                ipv4_address: 192.168.73.136
+            public_net_roaming:
+                ipv4_address: 192.168.72.222
+
+networks:
+    public_netA:
+        driver: bridge
+        name: oai-public-netA
+        ipam:
+            config:
+                - subnet: 192.168.71.0/24
+        driver_opts:
+            com.docker.network.bridge.name: "cn5g-partnerA"
+    public_net_roaming:
+        name: oai-public-roam
+        ipam:
+            config:
+                - subnet: 192.168.72.0/24
+        driver_opts:
+            com.docker.network.bridge.name: "cn5g-roam"
+    public_netB:
+        driver: bridge
+        name: oai-public-netB
+        ipam:
+            config:
+                - subnet: 192.168.73.0/24
+        driver_opts:
+            com.docker.network.bridge.name: "cn5g-partnerB"
