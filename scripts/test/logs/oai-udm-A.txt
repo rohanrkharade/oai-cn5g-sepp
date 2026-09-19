@@ -1,0 +1,720 @@
+2026-09-19T18:58:21.738768257Z Trying to read .yaml configuration file: /openair-udm/etc/config.yaml
+2026-09-19T18:58:21.738837742Z LTTNG Tracing disabled at build-time!
+2026-09-19T18:58:21.738848428Z [2026-09-19 20:58:21.737] [system ] [start] Options parsed
+2026-09-19T18:58:21.738855732Z [2026-09-19 20:58:21.737] [system ] [debug] Parsing the configuration file (YAML).
+2026-09-19T18:58:21.738862641Z [2026-09-19 20:58:21.737] [config ] [info] Reading NF configuration from /openair-udm/etc/config.yaml
+2026-09-19T18:58:21.771192323Z [2026-09-19 20:58:21.771] [config ] [debug] Unknown NF amf in configuration. Ignored
+2026-09-19T18:58:21.771227629Z [2026-09-19 20:58:21.771] [config ] [debug] Unknown NF smf in configuration. Ignored
+2026-09-19T18:58:21.771239532Z [2026-09-19 20:58:21.771] [config ] [debug] Unknown NF upf in configuration. Ignored
+2026-09-19T18:58:21.771246390Z [2026-09-19 20:58:21.771] [config ] [debug] Unknown NF ausf in configuration. Ignored
+2026-09-19T18:58:21.771264833Z [2026-09-19 20:58:21.771] [config ] [debug] Unknown NF sepp in configuration. Ignored
+2026-09-19T18:58:21.771815229Z [2026-09-19 20:58:21.771] [config ] [debug] Validating configuration of log_level
+2026-09-19T18:58:21.771971450Z [2026-09-19 20:58:21.771] [config ] [debug] Validating configuration of register_nf
+2026-09-19T18:58:21.772040546Z [2026-09-19 20:58:21.771] [config ] [debug] Validating configuration of http_version
+2026-09-19T18:58:21.772054946Z [2026-09-19 20:58:21.771] [config ] [debug] Validating configuration of http_request_timeout
+2026-09-19T18:58:21.772063624Z [2026-09-19 20:58:21.771] [config ] [debug] Validating configuration of NRF
+2026-09-19T18:58:21.775514132Z [2026-09-19 20:58:21.775] [config ] [debug] Validating configuration of UDR
+2026-09-19T18:58:21.775533056Z [2026-09-19 20:58:21.775] [config ] [debug] Validating configuration of UDM
+2026-09-19T18:58:21.778845739Z [2026-09-19 20:58:21.778] [config ] [debug] Validating configuration of database
+2026-09-19T18:58:21.778885587Z [2026-09-19 20:58:21.778] [config ] [info] ==== OPENAIRINTERFACE udm vBranch: udm-profile-fix Abrev. Hash: e3cceb7 Date: Sun Sep 13 22:06:15 2026 +0200 ====
+2026-09-19T18:58:21.778965720Z [2026-09-19 20:58:21.778] [config ] [info] Basic Configuration:
+2026-09-19T18:58:21.778998361Z [2026-09-19 20:58:21.778] [config ] [info]   - log_level..................................: debug
+2026-09-19T18:58:21.779051085Z [2026-09-19 20:58:21.779] [config ] [info]   - register_nf................................: Yes
+2026-09-19T18:58:21.779111165Z [2026-09-19 20:58:21.779] [config ] [info]   - http_version...............................: 2
+2026-09-19T18:58:21.779146703Z [2026-09-19 20:58:21.779] [config ] [info]   TLS:
+2026-09-19T18:58:21.779276704Z [2026-09-19 20:58:21.779] [config ] [info]     - Enable TLS.................................: No
+2026-09-19T18:58:21.779291479Z [2026-09-19 20:58:21.779] [config ] [info]   - HTTP Request Timeout.......................: 3000 (ms)
+2026-09-19T18:58:21.779315602Z [2026-09-19 20:58:21.779] [config ] [info]     UDM:
+2026-09-19T18:58:21.779346875Z [2026-09-19 20:58:21.779] [config ] [info]     - host.....................................: udm.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.779355542Z [2026-09-19 20:58:21.779] [config ] [info]     - SBI
+2026-09-19T18:58:21.779363018Z [2026-09-19 20:58:21.779] [config ] [info]       + URL....................................: udm.5gc.mnc14.mcc208.3gppnetwork.org:8080
+2026-09-19T18:58:21.779370605Z [2026-09-19 20:58:21.779] [config ] [info]       + API Version............................: v1
+2026-09-19T18:58:21.779377339Z [2026-09-19 20:58:21.779] [config ] [info]       + IPv4 Address ..........................: 192.168.71.135
+2026-09-19T18:58:21.779383748Z [2026-09-19 20:58:21.779] [config ] [info]     - Instance ID..............................: 0
+2026-09-19T18:58:21.779390334Z [2026-09-19 20:58:21.779] [config ] [info]     - PID Directory............................: 
+2026-09-19T18:58:21.779397199Z [2026-09-19 20:58:21.779] [config ] [info]     - UDM Name.................................: 
+2026-09-19T18:58:21.779403993Z [2026-09-19 20:58:21.779] [config ] [info] Peer NF Configuration:
+2026-09-19T18:58:21.779410635Z [2026-09-19 20:58:21.779] [config ] [info]   NRF:
+2026-09-19T18:58:21.779417267Z [2026-09-19 20:58:21.779] [config ] [info]     - host.....................................: nrf.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.779424252Z [2026-09-19 20:58:21.779] [config ] [info]     - SBI
+2026-09-19T18:58:21.779430666Z [2026-09-19 20:58:21.779] [config ] [info]       + URL....................................: nrf.5gc.mnc14.mcc208.3gppnetwork.org:8080
+2026-09-19T18:58:21.779437550Z [2026-09-19 20:58:21.779] [config ] [info]       + API Version............................: v1
+2026-09-19T18:58:21.779444302Z [2026-09-19 20:58:21.779] [config ] [info]   UDR:
+2026-09-19T18:58:21.779450992Z [2026-09-19 20:58:21.779] [config ] [info]     - host.....................................: udr.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.779458141Z [2026-09-19 20:58:21.779] [config ] [info]     - SBI
+2026-09-19T18:58:21.779464792Z [2026-09-19 20:58:21.779] [config ] [info]       + URL....................................: udr.5gc.mnc14.mcc208.3gppnetwork.org:8080
+2026-09-19T18:58:21.779472122Z [2026-09-19 20:58:21.779] [config ] [info]       + API Version............................: v1
+2026-09-19T18:58:21.779502170Z [2026-09-19 20:58:21.779] [udm_client] [info] HTTP Client successfully initiated on interface eth0 with timeout 3000 ms, HTTP version 2
+2026-09-19T18:58:21.779513909Z [2026-09-19 20:58:21.779] [udm_app] [start] Starting...
+2026-09-19T18:58:21.779520865Z [2026-09-19 20:58:21.779] [udm_app] [debug] - NF instance info
+2026-09-19T18:58:21.779549092Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Instance ID: 9534bca4-7a7e-47b5-a6f4-b273a0dbae75
+2026-09-19T18:58:21.779554296Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Instance name: OAI-UDM
+2026-09-19T18:58:21.779558703Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Instance type: UDM
+2026-09-19T18:58:21.779563282Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Instance fqdn: udm.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.779613368Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Status: REGISTERED
+2026-09-19T18:58:21.779627859Z [2026-09-19 20:58:21.779] [udm_app] [debug]     HeartBeat timer: 50
+2026-09-19T18:58:21.779634747Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Priority: 1
+2026-09-19T18:58:21.779641232Z [2026-09-19 20:58:21.779] [udm_app] [debug]     Capacity: 100
+2026-09-19T18:58:21.779646867Z [2026-09-19 20:58:21.779] [udm_app] [debug]     IPv4 Addr:
+2026-09-19T18:58:21.779652904Z [2026-09-19 20:58:21.779] [udm_app] [debug]         192.168.71.135
+2026-09-19T18:58:21.779659132Z [2026-09-19 20:58:21.779] [udm_app] [debug] 	UDM Info
+2026-09-19T18:58:21.779684837Z [2026-09-19 20:58:21.779] [udm_app] [debug] 		GroupId: 
+2026-09-19T18:58:21.779694180Z [2026-09-19 20:58:21.779] [udm_app] [debug] udm profile to JSON:
+2026-09-19T18:58:21.779701906Z  {"capacity":100,"fqdn":"udm.5gc.mnc14.mcc208.3gppnetwork.org","heartBeatTimer":50,"ipv4Addresses":["192.168.71.135"],"nfInstanceId":"9534bca4-7a7e-47b5-a6f4-b273a0dbae75","nfInstanceName":"OAI-UDM","nfStatus":"REGISTERED","nfType":"UDM","priority":1,"sNssais":[],"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}
+2026-09-19T18:58:21.779914474Z [2026-09-19 20:58:21.779] [udm_nrf] [info] Sending NF registration request to NRF, NRF's URI: http://nrf.5gc.mnc14.mcc208.3gppnetwork.org:8080/nnrf-nfm/v1/nf-instances/9534bca4-7a7e-47b5-a6f4-b273a0dbae75
+2026-09-19T18:58:21.779932222Z [2026-09-19 20:58:21.779] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:21.787567497Z [2026-09-19 20:58:21.787] [udm_app] [info] NRF TASK Created 
+2026-09-19T18:58:21.787614748Z [2026-09-19 20:58:21.787] [udm_app] [start] Started
+2026-09-19T18:58:21.788658220Z [2026-09-19 20:58:21.788] [udm_server] [info] HTTP2 server being started
+2026-09-19T18:58:31.912282442Z [2026-09-19 20:58:31.911] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:58:31.912992548Z [2026-09-19 20:58:31.912] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:41.991937805Z [2026-09-19 20:58:41.991] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:58:41.992413406Z [2026-09-19 20:58:41.992] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:52.031066371Z [2026-09-19 20:58:52.030] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:58:52.032321863Z [2026-09-19 20:58:52.031] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:02.064044936Z [2026-09-19 20:59:02.063] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:59:02.064555298Z [2026-09-19 20:59:02.064] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:12.096022824Z [2026-09-19 20:59:12.095] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:59:12.096343223Z [2026-09-19 20:59:12.096] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:22.132949203Z [2026-09-19 20:59:22.132] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:59:22.133453750Z [2026-09-19 20:59:22.133] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:32.178021203Z [2026-09-19 20:59:32.177] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:59:32.178551118Z [2026-09-19 20:59:32.178] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:42.210032626Z [2026-09-19 20:59:42.209] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:59:42.210420237Z [2026-09-19 20:59:42.210] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:52.239957880Z [2026-09-19 20:59:52.239] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T18:59:52.240211738Z [2026-09-19 20:59:52.240] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:02.268064923Z [2026-09-19 21:00:02.267] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:00:02.268327249Z [2026-09-19 21:00:02.268] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:12.306199762Z [2026-09-19 21:00:12.305] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:00:12.306565726Z [2026-09-19 21:00:12.306] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:22.343099336Z [2026-09-19 21:00:22.342] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:00:22.343518187Z [2026-09-19 21:00:22.343] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:32.391027214Z [2026-09-19 21:00:32.390] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:00:32.391486899Z [2026-09-19 21:00:32.391] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:42.407032192Z [2026-09-19 21:00:42.406] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:00:42.407554730Z [2026-09-19 21:00:42.407] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:52.437175450Z [2026-09-19 21:00:52.436] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:00:52.437698553Z [2026-09-19 21:00:52.437] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:02.462017065Z [2026-09-19 21:01:02.461] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:01:02.462401447Z [2026-09-19 21:01:02.462] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:12.504807818Z [2026-09-19 21:01:12.504] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:01:12.504955806Z [2026-09-19 21:01:12.504] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:22.513971302Z [2026-09-19 21:01:22.513] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:01:22.514453875Z [2026-09-19 21:01:22.514] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:32.559986491Z [2026-09-19 21:01:32.559] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:01:32.560276420Z [2026-09-19 21:01:32.560] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:42.590038539Z [2026-09-19 21:01:42.589] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:01:42.590679554Z [2026-09-19 21:01:42.590] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:52.623230842Z [2026-09-19 21:01:52.622] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:01:52.624145730Z [2026-09-19 21:01:52.623] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:02.652124518Z [2026-09-19 21:02:02.651] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:02:02.652550247Z [2026-09-19 21:02:02.652] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:12.683147043Z [2026-09-19 21:02:12.682] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:02:12.683306640Z [2026-09-19 21:02:12.683] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:22.724836056Z [2026-09-19 21:02:22.724] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:02:22.725092522Z [2026-09-19 21:02:22.724] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:32.749044921Z [2026-09-19 21:02:32.748] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:02:32.749541637Z [2026-09-19 21:02:32.749] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:42.786004648Z [2026-09-19 21:02:42.785] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:02:42.786294465Z [2026-09-19 21:02:42.786] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:52.854136744Z [2026-09-19 21:02:52.853] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:02:52.854323602Z [2026-09-19 21:02:52.854] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:02.886050716Z [2026-09-19 21:03:02.885] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:03:02.886497981Z [2026-09-19 21:03:02.886] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:12.921043459Z [2026-09-19 21:03:12.920] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:03:12.921506554Z [2026-09-19 21:03:12.921] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:22.948017218Z [2026-09-19 21:03:22.947] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:03:22.948306815Z [2026-09-19 21:03:22.948] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:32.995028240Z [2026-09-19 21:03:32.994] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:03:32.995371295Z [2026-09-19 21:03:32.995] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:43.015805695Z [2026-09-19 21:03:43.015] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:03:43.016028392Z [2026-09-19 21:03:43.015] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:53.042028058Z [2026-09-19 21:03:53.041] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:03:53.042372214Z [2026-09-19 21:03:53.042] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:03.066140932Z [2026-09-19 21:04:03.065] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:04:03.066326344Z [2026-09-19 21:04:03.066] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:13.132976404Z [2026-09-19 21:04:13.132] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:04:13.133494980Z [2026-09-19 21:04:13.133] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:23.258835583Z [2026-09-19 21:04:23.258] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:04:23.258991229Z [2026-09-19 21:04:23.258] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:33.323041837Z [2026-09-19 21:04:33.322] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:04:33.323362857Z [2026-09-19 21:04:33.323] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:43.365984082Z [2026-09-19 21:04:43.365] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:04:43.366448146Z [2026-09-19 21:04:43.366] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:53.422999830Z [2026-09-19 21:04:53.422] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:04:53.423416005Z [2026-09-19 21:04:53.423] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:03.474114420Z [2026-09-19 21:05:03.473] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:05:03.474438768Z [2026-09-19 21:05:03.474] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:13.514886267Z [2026-09-19 21:05:13.492] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:05:13.515041510Z [2026-09-19 21:05:13.493] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:23.512076016Z [2026-09-19 21:05:23.511] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:05:23.512691175Z [2026-09-19 21:05:23.512] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:33.566059075Z [2026-09-19 21:05:33.565] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:05:33.566560222Z [2026-09-19 21:05:33.566] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:43.628515282Z [2026-09-19 21:05:43.627] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:05:43.629613046Z [2026-09-19 21:05:43.628] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:53.672036732Z [2026-09-19 21:05:53.671] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:05:53.672314752Z [2026-09-19 21:05:53.672] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:03.718100742Z [2026-09-19 21:06:03.717] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:06:03.718482508Z [2026-09-19 21:06:03.718] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:13.763043785Z [2026-09-19 21:06:13.762] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:06:13.763287473Z [2026-09-19 21:06:13.763] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:23.797978395Z [2026-09-19 21:06:23.797] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:06:23.798370800Z [2026-09-19 21:06:23.798] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:33.851174165Z [2026-09-19 21:06:33.850] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:06:33.851322357Z [2026-09-19 21:06:33.851] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:43.886031639Z [2026-09-19 21:06:43.885] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:06:43.886539985Z [2026-09-19 21:06:43.886] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:53.927058587Z [2026-09-19 21:06:53.926] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:06:53.927261977Z [2026-09-19 21:06:53.927] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:03.982115067Z [2026-09-19 21:07:03.981] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:07:03.982627475Z [2026-09-19 21:07:03.982] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:14.032134401Z [2026-09-19 21:07:14.031] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:07:14.032449208Z [2026-09-19 21:07:14.032] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:24.066791256Z [2026-09-19 21:07:24.066] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:07:24.066893016Z [2026-09-19 21:07:24.066] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:34.109127682Z [2026-09-19 21:07:34.108] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:07:34.109563426Z [2026-09-19 21:07:34.109] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:44.148118398Z [2026-09-19 21:07:44.147] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:07:44.148387035Z [2026-09-19 21:07:44.148] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:54.174977840Z [2026-09-19 21:07:54.174] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:07:54.175480418Z [2026-09-19 21:07:54.175] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:04.201093481Z [2026-09-19 21:08:04.200] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:08:04.201663706Z [2026-09-19 21:08:04.201] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:14.264071101Z [2026-09-19 21:08:14.263] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:08:14.264426563Z [2026-09-19 21:08:14.264] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:24.297119348Z [2026-09-19 21:08:24.296] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:08:24.297487827Z [2026-09-19 21:08:24.297] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:34.351730682Z [2026-09-19 21:08:34.351] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:08:34.352102645Z [2026-09-19 21:08:34.351] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:44.384008254Z [2026-09-19 21:08:44.383] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:08:44.384459718Z [2026-09-19 21:08:44.384] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:54.465993977Z [2026-09-19 21:08:54.465] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:08:54.466568391Z [2026-09-19 21:08:54.466] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:04.540063511Z [2026-09-19 21:09:04.539] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:09:04.540550733Z [2026-09-19 21:09:04.540] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:14.597957022Z [2026-09-19 21:09:14.597] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:09:14.598088494Z [2026-09-19 21:09:14.598] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:24.641202039Z [2026-09-19 21:09:24.640] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:09:24.641774371Z [2026-09-19 21:09:24.641] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:34.678089501Z [2026-09-19 21:09:34.677] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:09:34.678366000Z [2026-09-19 21:09:34.678] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:44.724124802Z [2026-09-19 21:09:44.723] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:09:44.724702505Z [2026-09-19 21:09:44.724] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:54.773105249Z [2026-09-19 21:09:54.772] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:09:54.773565009Z [2026-09-19 21:09:54.773] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:04.852711909Z [2026-09-19 21:10:04.852] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:10:04.852744464Z [2026-09-19 21:10:04.852] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:14.878978255Z [2026-09-19 21:10:14.878] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:10:14.879080845Z [2026-09-19 21:10:14.879] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:24.958918025Z [2026-09-19 21:10:24.957] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:10:24.959009277Z [2026-09-19 21:10:24.958] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:34.998100869Z [2026-09-19 21:10:34.997] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:10:34.998304600Z [2026-09-19 21:10:34.998] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:45.053767388Z [2026-09-19 21:10:45.053] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:10:45.053932976Z [2026-09-19 21:10:45.053] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:55.074073817Z [2026-09-19 21:10:55.073] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:10:55.074568823Z [2026-09-19 21:10:55.074] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:05.102084679Z [2026-09-19 21:11:05.101] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:11:05.103360811Z [2026-09-19 21:11:05.102] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:15.123896662Z [2026-09-19 21:11:15.123] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:11:15.124183850Z [2026-09-19 21:11:15.124] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:25.134830898Z [2026-09-19 21:11:25.134] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:11:25.134857025Z [2026-09-19 21:11:25.134] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:35.143927254Z [2026-09-19 21:11:35.143] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:11:35.144024414Z [2026-09-19 21:11:35.143] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:45.164937050Z [2026-09-19 21:11:45.164] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:11:45.165252367Z [2026-09-19 21:11:45.165] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:55.191011535Z [2026-09-19 21:11:55.190] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:11:55.191323582Z [2026-09-19 21:11:55.191] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:05.235056942Z [2026-09-19 21:12:05.234] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:12:05.235361608Z [2026-09-19 21:12:05.235] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:15.265066863Z [2026-09-19 21:12:15.264] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:12:15.265376344Z [2026-09-19 21:12:15.265] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:25.292996576Z [2026-09-19 21:12:25.291] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:12:25.293057612Z [2026-09-19 21:12:25.292] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:35.329789643Z [2026-09-19 21:12:35.329] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:12:35.330021345Z [2026-09-19 21:12:35.329] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:45.335743392Z [2026-09-19 21:12:45.335] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:12:45.335901653Z [2026-09-19 21:12:45.335] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:55.382024918Z [2026-09-19 21:12:55.381] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:12:55.382484840Z [2026-09-19 21:12:55.382] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:05.406016486Z [2026-09-19 21:13:05.405] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:13:05.406358848Z [2026-09-19 21:13:05.406] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:15.444085994Z [2026-09-19 21:13:15.443] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:13:15.444297573Z [2026-09-19 21:13:15.444] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:25.481990082Z [2026-09-19 21:13:25.481] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:13:25.482303345Z [2026-09-19 21:13:25.482] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:35.512948224Z [2026-09-19 21:13:35.512] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:13:35.513100893Z [2026-09-19 21:13:35.512] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:45.529112755Z [2026-09-19 21:13:45.528] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:13:45.529372264Z [2026-09-19 21:13:45.529] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:55.550878780Z [2026-09-19 21:13:55.550] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:13:55.551019915Z [2026-09-19 21:13:55.550] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:05.574094040Z [2026-09-19 21:14:05.573] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:14:05.574298905Z [2026-09-19 21:14:05.574] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:15.627979446Z [2026-09-19 21:14:15.627] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:14:15.628475850Z [2026-09-19 21:14:15.628] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:25.649027692Z [2026-09-19 21:14:25.648] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:14:25.649285571Z [2026-09-19 21:14:25.649] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:35.669065608Z [2026-09-19 21:14:35.668] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:14:35.669509429Z [2026-09-19 21:14:35.669] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:45.688169592Z [2026-09-19 21:14:45.687] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:14:45.688784763Z [2026-09-19 21:14:45.688] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:55.726140475Z [2026-09-19 21:14:55.725] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:14:55.726465589Z [2026-09-19 21:14:55.726] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:05.743994024Z [2026-09-19 21:15:05.743] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:15:05.744567994Z [2026-09-19 21:15:05.744] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:15.768066718Z [2026-09-19 21:15:15.767] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:15:15.768380973Z [2026-09-19 21:15:15.768] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:25.780766416Z [2026-09-19 21:15:25.780] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:15:25.780873318Z [2026-09-19 21:15:25.780] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:35.810081504Z [2026-09-19 21:15:35.809] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:15:35.810311861Z [2026-09-19 21:15:35.810] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:45.838130998Z [2026-09-19 21:15:45.837] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:15:45.838373878Z [2026-09-19 21:15:45.838] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:55.863053330Z [2026-09-19 21:15:55.862] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:15:55.863357901Z [2026-09-19 21:15:55.863] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:05.880061798Z [2026-09-19 21:16:05.879] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:16:05.880504942Z [2026-09-19 21:16:05.880] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:15.897098218Z [2026-09-19 21:16:15.896] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:16:15.897477262Z [2026-09-19 21:16:15.897] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:25.912136529Z [2026-09-19 21:16:25.911] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:16:25.912540138Z [2026-09-19 21:16:25.912] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:35.953711949Z [2026-09-19 21:16:35.953] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:16:35.953981902Z [2026-09-19 21:16:35.953] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:45.965961377Z [2026-09-19 21:16:45.965] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:16:45.966181454Z [2026-09-19 21:16:45.966] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:55.990757045Z [2026-09-19 21:16:55.990] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:16:55.990907114Z [2026-09-19 21:16:55.990] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:06.009849448Z [2026-09-19 21:17:06.009] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:17:06.010651642Z [2026-09-19 21:17:06.010] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:16.029194438Z [2026-09-19 21:17:16.029] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:17:16.029312724Z [2026-09-19 21:17:16.029] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:26.047751718Z [2026-09-19 21:17:26.047] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:17:26.048084313Z [2026-09-19 21:17:26.048] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:36.101742393Z [2026-09-19 21:17:36.101] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:17:36.101907706Z [2026-09-19 21:17:36.101] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:46.122882010Z [2026-09-19 21:17:46.122] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:17:46.123098378Z [2026-09-19 21:17:46.122] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:56.184884769Z [2026-09-19 21:17:56.184] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:17:56.185319531Z [2026-09-19 21:17:56.185] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:06.213883134Z [2026-09-19 21:18:06.213] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:18:06.213992308Z [2026-09-19 21:18:06.213] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:16.231135291Z [2026-09-19 21:18:16.230] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:18:16.231555679Z [2026-09-19 21:18:16.231] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:26.272019501Z [2026-09-19 21:18:26.271] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:18:26.272528358Z [2026-09-19 21:18:26.272] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:36.298019144Z [2026-09-19 21:18:36.297] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:18:36.298223698Z [2026-09-19 21:18:36.298] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:46.337013722Z [2026-09-19 21:18:46.336] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:18:46.337406638Z [2026-09-19 21:18:46.337] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:56.418850070Z [2026-09-19 21:18:56.417] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:18:56.419429653Z [2026-09-19 21:18:56.418] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:06.446012389Z [2026-09-19 21:19:06.445] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:19:06.446510185Z [2026-09-19 21:19:06.446] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:16.491330680Z [2026-09-19 21:19:16.490] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:19:16.492352596Z [2026-09-19 21:19:16.491] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:26.552029581Z [2026-09-19 21:19:26.551] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:19:26.552300619Z [2026-09-19 21:19:26.552] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:36.589012399Z [2026-09-19 21:19:36.588] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:19:36.589514563Z [2026-09-19 21:19:36.589] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:46.610058538Z [2026-09-19 21:19:46.609] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:19:46.610383266Z [2026-09-19 21:19:46.610] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:56.652988952Z [2026-09-19 21:19:56.652] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:19:56.653261082Z [2026-09-19 21:19:56.653] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:06.708051131Z [2026-09-19 21:20:06.707] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:20:06.708542959Z [2026-09-19 21:20:06.708] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:16.747005542Z [2026-09-19 21:20:16.746] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:20:16.747219649Z [2026-09-19 21:20:16.747] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:26.782076655Z [2026-09-19 21:20:26.781] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:20:26.782359483Z [2026-09-19 21:20:26.782] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:36.821965515Z [2026-09-19 21:20:36.821] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:20:36.822468546Z [2026-09-19 21:20:36.822] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:46.863121726Z [2026-09-19 21:20:46.862] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:20:46.863357538Z [2026-09-19 21:20:46.863] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:56.894932157Z [2026-09-19 21:20:56.894] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:20:56.895346357Z [2026-09-19 21:20:56.895] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:06.935060245Z [2026-09-19 21:21:06.934] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:21:06.935325106Z [2026-09-19 21:21:06.935] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:16.979085757Z [2026-09-19 21:21:16.978] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:21:16.979345433Z [2026-09-19 21:21:16.979] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:27.039053309Z [2026-09-19 21:21:27.038] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:21:27.039519944Z [2026-09-19 21:21:27.039] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:37.058085651Z [2026-09-19 21:21:37.057] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:21:37.058438173Z [2026-09-19 21:21:37.058] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:47.075968549Z [2026-09-19 21:21:47.075] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:21:47.076039205Z [2026-09-19 21:21:47.075] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:57.095732885Z [2026-09-19 21:21:57.095] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:21:57.095942950Z [2026-09-19 21:21:57.095] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:07.105797198Z [2026-09-19 21:22:07.103] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:22:07.105882084Z [2026-09-19 21:22:07.104] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:17.140981437Z [2026-09-19 21:22:17.140] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:22:17.141483120Z [2026-09-19 21:22:17.141] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:27.172932079Z [2026-09-19 21:22:27.172] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:22:27.173348639Z [2026-09-19 21:22:27.173] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:37.240070381Z [2026-09-19 21:22:37.239] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:22:37.240322810Z [2026-09-19 21:22:37.240] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:47.272086716Z [2026-09-19 21:22:47.271] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:22:47.272620442Z [2026-09-19 21:22:47.272] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:57.295041861Z [2026-09-19 21:22:57.294] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:22:57.295493937Z [2026-09-19 21:22:57.295] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:07.326098207Z [2026-09-19 21:23:07.325] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:23:07.326705551Z [2026-09-19 21:23:07.326] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:17.357022092Z [2026-09-19 21:23:17.356] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:23:17.357270860Z [2026-09-19 21:23:17.357] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:27.377843748Z [2026-09-19 21:23:27.377] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:23:27.377872540Z [2026-09-19 21:23:27.377] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:37.410121846Z [2026-09-19 21:23:37.409] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:23:37.410291533Z [2026-09-19 21:23:37.410] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:47.437079644Z [2026-09-19 21:23:47.436] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:23:47.437666395Z [2026-09-19 21:23:47.437] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:57.456061042Z [2026-09-19 21:23:57.455] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:23:57.456245874Z [2026-09-19 21:23:57.456] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:07.481068598Z [2026-09-19 21:24:07.480] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:24:07.481491272Z [2026-09-19 21:24:07.481] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:17.500059069Z [2026-09-19 21:24:17.499] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:24:17.500562124Z [2026-09-19 21:24:17.500] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:27.549084119Z [2026-09-19 21:24:27.548] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:24:27.549562199Z [2026-09-19 21:24:27.549] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:37.569140536Z [2026-09-19 21:24:37.568] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:24:37.569339916Z [2026-09-19 21:24:37.569] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:47.589045042Z [2026-09-19 21:24:47.588] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:24:47.589390219Z [2026-09-19 21:24:47.589] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:57.608110869Z [2026-09-19 21:24:57.607] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:24:57.608380096Z [2026-09-19 21:24:57.608] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:07.641010429Z [2026-09-19 21:25:07.640] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:25:07.641509717Z [2026-09-19 21:25:07.641] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:17.666998503Z [2026-09-19 21:25:17.666] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:25:17.667480082Z [2026-09-19 21:25:17.667] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:27.750192106Z [2026-09-19 21:25:27.749] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:25:27.750636496Z [2026-09-19 21:25:27.750] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:37.787996722Z [2026-09-19 21:25:37.787] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:25:37.788195701Z [2026-09-19 21:25:37.788] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:47.819056926Z [2026-09-19 21:25:47.818] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:25:47.819233006Z [2026-09-19 21:25:47.819] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:57.846861108Z [2026-09-19 21:25:57.846] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:25:57.847167406Z [2026-09-19 21:25:57.846] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:07.885093821Z [2026-09-19 21:26:07.884] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:26:07.885442838Z [2026-09-19 21:26:07.885] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:17.929054352Z [2026-09-19 21:26:17.928] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:26:17.929476615Z [2026-09-19 21:26:17.929] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:27.948778741Z [2026-09-19 21:26:27.948] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:26:27.948947630Z [2026-09-19 21:26:27.948] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:37.964996799Z [2026-09-19 21:26:37.964] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:26:37.965307148Z [2026-09-19 21:26:37.965] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:47.975086857Z [2026-09-19 21:26:47.974] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:26:47.975382322Z [2026-09-19 21:26:47.975] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:57.997996382Z [2026-09-19 21:26:57.997] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:26:57.998537664Z [2026-09-19 21:26:57.998] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:08.027020432Z [2026-09-19 21:27:08.026] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:27:08.027214043Z [2026-09-19 21:27:08.027] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:18.064064440Z [2026-09-19 21:27:18.063] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:27:18.064526082Z [2026-09-19 21:27:18.064] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:28.082136578Z [2026-09-19 21:27:28.081] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:27:28.082624167Z [2026-09-19 21:27:28.082] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:38.096104445Z [2026-09-19 21:27:38.095] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:27:38.096832350Z [2026-09-19 21:27:38.096] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:48.120095946Z [2026-09-19 21:27:48.119] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:27:48.120287060Z [2026-09-19 21:27:48.120] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:58.147762938Z [2026-09-19 21:27:58.146] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:27:58.147836829Z [2026-09-19 21:27:58.147] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:08.167043359Z [2026-09-19 21:28:08.166] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:28:08.167306848Z [2026-09-19 21:28:08.167] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:18.191092676Z [2026-09-19 21:28:18.190] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:28:18.191303350Z [2026-09-19 21:28:18.191] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:28.212086906Z [2026-09-19 21:28:28.211] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:28:28.212347648Z [2026-09-19 21:28:28.212] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:38.241053434Z [2026-09-19 21:28:38.240] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:28:38.241398349Z [2026-09-19 21:28:38.241] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:48.266115263Z [2026-09-19 21:28:48.265] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:28:48.266280244Z [2026-09-19 21:28:48.266] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:58.295862475Z [2026-09-19 21:28:58.295] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:28:58.296112220Z [2026-09-19 21:28:58.295] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:08.312933707Z [2026-09-19 21:29:08.312] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:29:08.313092904Z [2026-09-19 21:29:08.312] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:18.329922772Z [2026-09-19 21:29:18.329] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:29:18.330005195Z [2026-09-19 21:29:18.329] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:28.360063117Z [2026-09-19 21:29:28.359] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:29:28.360316349Z [2026-09-19 21:29:28.360] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:38.379981822Z [2026-09-19 21:29:38.379] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:29:38.380504912Z [2026-09-19 21:29:38.380] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:48.412007092Z [2026-09-19 21:29:48.411] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:29:48.412236162Z [2026-09-19 21:29:48.412] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:58.429047831Z [2026-09-19 21:29:58.428] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:29:58.429453193Z [2026-09-19 21:29:58.429] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:08.458094561Z [2026-09-19 21:30:08.457] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:30:08.458775449Z [2026-09-19 21:30:08.458] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:18.482704963Z [2026-09-19 21:30:18.482] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:30:18.482843752Z [2026-09-19 21:30:18.482] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:28.518084850Z [2026-09-19 21:30:28.517] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:30:28.518505888Z [2026-09-19 21:30:28.518] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:38.555044300Z [2026-09-19 21:30:38.554] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:30:38.555450273Z [2026-09-19 21:30:38.555] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:48.566874759Z [2026-09-19 21:30:48.566] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:30:48.566898964Z [2026-09-19 21:30:48.566] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:58.599039007Z [2026-09-19 21:30:58.598] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:30:58.599314555Z [2026-09-19 21:30:58.599] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:08.622093304Z [2026-09-19 21:31:08.621] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:31:08.622413372Z [2026-09-19 21:31:08.622] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:18.647841848Z [2026-09-19 21:31:18.647] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:31:18.647923667Z [2026-09-19 21:31:18.647] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:28.670085819Z [2026-09-19 21:31:28.669] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:31:28.670252338Z [2026-09-19 21:31:28.670] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:38.691134930Z [2026-09-19 21:31:38.690] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:31:38.691161028Z [2026-09-19 21:31:38.691] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:48.709070816Z [2026-09-19 21:31:48.708] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:31:48.709099157Z [2026-09-19 21:31:48.708] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:58.720107505Z [2026-09-19 21:31:58.719] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:31:58.720414114Z [2026-09-19 21:31:58.720] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:08.736058436Z [2026-09-19 21:32:08.735] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:32:08.736254040Z [2026-09-19 21:32:08.736] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:18.762072602Z [2026-09-19 21:32:18.761] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:32:18.762515190Z [2026-09-19 21:32:18.762] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:28.780038799Z [2026-09-19 21:32:28.779] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:32:28.780521700Z [2026-09-19 21:32:28.780] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:38.816949515Z [2026-09-19 21:32:38.816] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:32:38.817157618Z [2026-09-19 21:32:38.817] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:48.849042441Z [2026-09-19 21:32:48.848] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:32:48.849284440Z [2026-09-19 21:32:48.849] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:58.885024855Z [2026-09-19 21:32:58.884] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:32:58.885408739Z [2026-09-19 21:32:58.885] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:08.900758900Z [2026-09-19 21:33:08.900] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:33:08.900987818Z [2026-09-19 21:33:08.900] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:18.911031349Z [2026-09-19 21:33:18.910] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:33:18.911914947Z [2026-09-19 21:33:18.911] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:28.925988871Z [2026-09-19 21:33:28.925] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:33:28.926456933Z [2026-09-19 21:33:28.926] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:38.944032278Z [2026-09-19 21:33:38.943] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:33:38.944806179Z [2026-09-19 21:33:38.944] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:48.973166197Z [2026-09-19 21:33:48.972] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:33:48.973197031Z [2026-09-19 21:33:48.972] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:58.983809915Z [2026-09-19 21:33:58.980] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:33:58.983901043Z [2026-09-19 21:33:58.981] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:09.027064807Z [2026-09-19 21:34:09.026] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:34:09.027289777Z [2026-09-19 21:34:09.027] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:19.051034914Z [2026-09-19 21:34:19.050] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:34:19.051102407Z [2026-09-19 21:34:19.051] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:29.090850291Z [2026-09-19 21:34:29.090] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:34:29.091238778Z [2026-09-19 21:34:29.091] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:39.126912219Z [2026-09-19 21:34:39.126] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:34:39.128122966Z [2026-09-19 21:34:39.127] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:49.146007619Z [2026-09-19 21:34:49.145] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:34:49.146490103Z [2026-09-19 21:34:49.146] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:59.178070980Z [2026-09-19 21:34:59.177] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:34:59.178419702Z [2026-09-19 21:34:59.178] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:09.218020261Z [2026-09-19 21:35:09.217] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:35:09.218860007Z [2026-09-19 21:35:09.218] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:19.256856132Z [2026-09-19 21:35:19.256] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:35:19.256912062Z [2026-09-19 21:35:19.256] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:29.278047150Z [2026-09-19 21:35:29.277] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:35:29.278553645Z [2026-09-19 21:35:29.278] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:39.297121331Z [2026-09-19 21:35:39.296] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:35:39.297288783Z [2026-09-19 21:35:39.297] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:49.345818181Z [2026-09-19 21:35:49.345] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:35:49.345865071Z [2026-09-19 21:35:49.345] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:59.366046816Z [2026-09-19 21:35:59.365] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:35:59.366363386Z [2026-09-19 21:35:59.366] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:09.394083428Z [2026-09-19 21:36:09.393] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:36:09.394356295Z [2026-09-19 21:36:09.394] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:19.408838969Z [2026-09-19 21:36:19.408] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:36:19.408863558Z [2026-09-19 21:36:19.408] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:29.431004555Z [2026-09-19 21:36:29.430] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:36:29.431322668Z [2026-09-19 21:36:29.431] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:39.451045549Z [2026-09-19 21:36:39.450] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:36:39.451632944Z [2026-09-19 21:36:39.451] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:49.470033659Z [2026-09-19 21:36:49.469] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:36:49.470485091Z [2026-09-19 21:36:49.470] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:59.499153948Z [2026-09-19 21:36:59.498] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:36:59.499340223Z [2026-09-19 21:36:59.499] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:09.520974609Z [2026-09-19 21:37:09.520] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:37:09.521179444Z [2026-09-19 21:37:09.521] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:19.540769354Z [2026-09-19 21:37:19.538] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:37:19.540855856Z [2026-09-19 21:37:19.539] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:29.568080549Z [2026-09-19 21:37:29.567] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:37:29.568297788Z [2026-09-19 21:37:29.568] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:39.598100250Z [2026-09-19 21:37:39.597] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:37:39.598279638Z [2026-09-19 21:37:39.598] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:49.664048093Z [2026-09-19 21:37:49.663] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:37:49.664642686Z [2026-09-19 21:37:49.664] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:59.697078556Z [2026-09-19 21:37:59.696] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:37:59.697457306Z [2026-09-19 21:37:59.697] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:09.722942942Z [2026-09-19 21:38:09.722] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:38:09.723258726Z [2026-09-19 21:38:09.723] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:19.748072238Z [2026-09-19 21:38:19.747] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:38:19.748916863Z [2026-09-19 21:38:19.748] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:29.805114423Z [2026-09-19 21:38:29.804] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:38:29.805638358Z [2026-09-19 21:38:29.805] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:39.841056641Z [2026-09-19 21:38:39.840] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:38:39.841359557Z [2026-09-19 21:38:39.841] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:49.863039455Z [2026-09-19 21:38:49.862] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:38:49.863504828Z [2026-09-19 21:38:49.863] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:59.887059671Z [2026-09-19 21:38:59.886] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:38:59.887350205Z [2026-09-19 21:38:59.887] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:09.948124979Z [2026-09-19 21:39:09.947] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:39:09.948550478Z [2026-09-19 21:39:09.948] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:19.975110013Z [2026-09-19 21:39:19.974] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:39:19.975552195Z [2026-09-19 21:39:19.975] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:30.009099371Z [2026-09-19 21:39:30.008] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:39:30.009361491Z [2026-09-19 21:39:30.009] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:40.049095668Z [2026-09-19 21:39:40.048] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:39:40.049504133Z [2026-09-19 21:39:40.049] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:50.062099546Z [2026-09-19 21:39:50.061] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:39:50.062553882Z [2026-09-19 21:39:50.062] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:00.083063468Z [2026-09-19 21:40:00.082] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:40:00.083327259Z [2026-09-19 21:40:00.083] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:10.124067254Z [2026-09-19 21:40:10.123] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:40:10.124453277Z [2026-09-19 21:40:10.124] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:20.165059061Z [2026-09-19 21:40:20.164] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:40:20.165531417Z [2026-09-19 21:40:20.165] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:30.197004605Z [2026-09-19 21:40:30.196] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:40:30.197167714Z [2026-09-19 21:40:30.197] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:40.221076641Z [2026-09-19 21:40:40.220] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:40:40.221449600Z [2026-09-19 21:40:40.221] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:50.250121475Z [2026-09-19 21:40:50.249] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:40:50.250701188Z [2026-09-19 21:40:50.250] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:00.291132933Z [2026-09-19 21:41:00.290] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:41:00.291364615Z [2026-09-19 21:41:00.291] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:10.357059866Z [2026-09-19 21:41:10.356] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:41:10.357339218Z [2026-09-19 21:41:10.357] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:20.380023305Z [2026-09-19 21:41:20.379] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:41:20.380466250Z [2026-09-19 21:41:20.380] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:30.420956020Z [2026-09-19 21:41:30.420] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:41:30.421139230Z [2026-09-19 21:41:30.421] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:40.440000128Z [2026-09-19 21:41:40.439] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:41:40.440895945Z [2026-09-19 21:41:40.440] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:50.464870145Z [2026-09-19 21:41:50.464] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:41:50.464909372Z [2026-09-19 21:41:50.464] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:00.488116544Z [2026-09-19 21:42:00.487] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:42:00.488357489Z [2026-09-19 21:42:00.488] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:10.508998435Z [2026-09-19 21:42:10.508] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:42:10.509237655Z [2026-09-19 21:42:10.509] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:20.526020709Z [2026-09-19 21:42:20.525] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:42:20.526551872Z [2026-09-19 21:42:20.526] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:30.544028511Z [2026-09-19 21:42:30.543] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:42:30.544228925Z [2026-09-19 21:42:30.544] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:40.583744220Z [2026-09-19 21:42:40.583] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:42:40.583788089Z [2026-09-19 21:42:40.583] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:50.622761709Z [2026-09-19 21:42:50.622] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:42:50.622850952Z [2026-09-19 21:42:50.622] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:00.638078059Z [2026-09-19 21:43:00.637] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:43:00.638529944Z [2026-09-19 21:43:00.638] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:10.675030596Z [2026-09-19 21:43:10.674] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:43:10.675329670Z [2026-09-19 21:43:10.675] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:20.703196007Z [2026-09-19 21:43:20.702] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:43:20.703224600Z [2026-09-19 21:43:20.702] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:30.731059397Z [2026-09-19 21:43:30.730] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:43:30.731405153Z [2026-09-19 21:43:30.731] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:40.760085737Z [2026-09-19 21:43:40.759] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:43:40.760385321Z [2026-09-19 21:43:40.760] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:50.782100329Z [2026-09-19 21:43:50.781] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:43:50.782318659Z [2026-09-19 21:43:50.782] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:00.813076399Z [2026-09-19 21:44:00.811] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:44:00.813174959Z [2026-09-19 21:44:00.812] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:10.848929646Z [2026-09-19 21:44:10.848] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:44:10.849001893Z [2026-09-19 21:44:10.848] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:20.880028812Z [2026-09-19 21:44:20.877] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:44:20.880047782Z [2026-09-19 21:44:20.877] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:30.899190455Z [2026-09-19 21:44:30.898] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:44:30.899710811Z [2026-09-19 21:44:30.899] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:40.968027753Z [2026-09-19 21:44:40.967] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:44:40.968478383Z [2026-09-19 21:44:40.968] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:50.988805654Z [2026-09-19 21:44:50.988] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:44:50.988993247Z [2026-09-19 21:44:50.988] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:01.007221614Z [2026-09-19 21:45:01.006] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:45:01.007514238Z [2026-09-19 21:45:01.007] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:11.047861593Z [2026-09-19 21:45:11.047] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:45:11.048030566Z [2026-09-19 21:45:11.047] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:21.090094085Z [2026-09-19 21:45:21.089] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:45:21.090430125Z [2026-09-19 21:45:21.090] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:31.131713657Z [2026-09-19 21:45:31.131] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:45:31.131748090Z [2026-09-19 21:45:31.131] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:41.171051317Z [2026-09-19 21:45:41.170] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:45:41.171236520Z [2026-09-19 21:45:41.171] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:51.218036154Z [2026-09-19 21:45:51.217] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:45:51.218541013Z [2026-09-19 21:45:51.218] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:01.238112241Z [2026-09-19 21:46:01.237] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:46:01.238614046Z [2026-09-19 21:46:01.238] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:11.294001532Z [2026-09-19 21:46:11.293] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:46:11.294258738Z [2026-09-19 21:46:11.294] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:21.319122658Z [2026-09-19 21:46:21.318] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:46:21.319320795Z [2026-09-19 21:46:21.319] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:31.337751320Z [2026-09-19 21:46:31.337] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:46:31.337955422Z [2026-09-19 21:46:31.337] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:41.371009045Z [2026-09-19 21:46:41.370] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:46:41.371460310Z [2026-09-19 21:46:41.371] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:51.389013532Z [2026-09-19 21:46:51.388] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:46:51.389399165Z [2026-09-19 21:46:51.389] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:01.403888973Z [2026-09-19 21:47:01.403] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:47:01.403922087Z [2026-09-19 21:47:01.403] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:11.422802237Z [2026-09-19 21:47:11.422] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:47:11.422828016Z [2026-09-19 21:47:11.422] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:21.448072271Z [2026-09-19 21:47:21.447] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:47:21.448443932Z [2026-09-19 21:47:21.448] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:31.467790086Z [2026-09-19 21:47:31.467] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:47:31.467836579Z [2026-09-19 21:47:31.467] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:41.515940599Z [2026-09-19 21:47:41.515] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:47:41.515988895Z [2026-09-19 21:47:41.515] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:51.538387677Z [2026-09-19 21:47:51.537] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:47:51.538455093Z [2026-09-19 21:47:51.537] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:01.551111768Z [2026-09-19 21:48:01.550] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:48:01.551492191Z [2026-09-19 21:48:01.551] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:11.580069062Z [2026-09-19 21:48:11.579] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:48:11.580531498Z [2026-09-19 21:48:11.580] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:21.611060977Z [2026-09-19 21:48:21.610] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:48:21.611370565Z [2026-09-19 21:48:21.611] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:31.649010208Z [2026-09-19 21:48:31.648] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:48:31.649551989Z [2026-09-19 21:48:31.649] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:41.690063711Z [2026-09-19 21:48:41.689] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:48:41.690511529Z [2026-09-19 21:48:41.690] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:51.715079981Z [2026-09-19 21:48:51.714] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:48:51.715507377Z [2026-09-19 21:48:51.715] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:01.734047408Z [2026-09-19 21:49:01.733] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:49:01.734303807Z [2026-09-19 21:49:01.734] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:11.771757686Z [2026-09-19 21:49:11.771] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:49:11.772003464Z [2026-09-19 21:49:11.771] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:21.809915598Z [2026-09-19 21:49:21.809] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:49:21.810313567Z [2026-09-19 21:49:21.810] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:31.876927958Z [2026-09-19 21:49:31.876] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:49:31.877329819Z [2026-09-19 21:49:31.877] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:41.998123631Z [2026-09-19 21:49:41.997] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:49:41.998436278Z [2026-09-19 21:49:41.998] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:52.019023582Z [2026-09-19 21:49:52.018] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:49:52.019547245Z [2026-09-19 21:49:52.019] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:02.038177401Z [2026-09-19 21:50:02.037] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:50:02.038438628Z [2026-09-19 21:50:02.038] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:12.067876246Z [2026-09-19 21:50:12.067] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:50:12.068366715Z [2026-09-19 21:50:12.068] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:22.111184669Z [2026-09-19 21:50:22.110] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:50:22.111490859Z [2026-09-19 21:50:22.111] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:32.134049932Z [2026-09-19 21:50:32.133] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:50:32.134363400Z [2026-09-19 21:50:32.134] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:42.163056616Z [2026-09-19 21:50:42.162] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:50:42.163458214Z [2026-09-19 21:50:42.163] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:52.186145534Z [2026-09-19 21:50:52.185] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:50:52.186445543Z [2026-09-19 21:50:52.186] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:02.202976934Z [2026-09-19 21:51:02.202] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:51:02.203438944Z [2026-09-19 21:51:02.203] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:12.229780687Z [2026-09-19 21:51:12.229] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:51:12.229932302Z [2026-09-19 21:51:12.229] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:22.281116394Z [2026-09-19 21:51:22.280] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:51:22.281461580Z [2026-09-19 21:51:22.281] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:32.312051877Z [2026-09-19 21:51:32.311] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:51:32.312348102Z [2026-09-19 21:51:32.312] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:42.338772058Z [2026-09-19 21:51:42.338] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:51:42.338824657Z [2026-09-19 21:51:42.338] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:52.369101943Z [2026-09-19 21:51:52.368] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:51:52.369514206Z [2026-09-19 21:51:52.369] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:02.407078742Z [2026-09-19 21:52:02.406] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:52:02.407246815Z [2026-09-19 21:52:02.407] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:12.422005191Z [2026-09-19 21:52:12.421] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:52:12.422533624Z [2026-09-19 21:52:12.422] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:22.440098540Z [2026-09-19 21:52:22.439] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:52:22.440621642Z [2026-09-19 21:52:22.440] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:32.465004707Z [2026-09-19 21:52:32.464] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:52:32.465048365Z [2026-09-19 21:52:32.464] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:42.501144119Z [2026-09-19 21:52:42.500] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:52:42.501343275Z [2026-09-19 21:52:42.501] [udm_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:52.531159809Z [2026-09-19 21:52:52.530] [udm_nrf] [info] Sending NF heartbeat request
+2026-09-19T19:52:52.531339005Z [2026-09-19 21:52:52.531] [udm_client] [debug] Send a simple HTTP request

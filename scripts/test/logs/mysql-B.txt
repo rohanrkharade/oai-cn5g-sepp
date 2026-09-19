@@ -1,0 +1,15 @@
+2026-09-19T18:58:20.254609633Z 2026-09-19 20:58:20+02:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.6.0-1.el9 started.
+2026-09-19T18:58:20.915698150Z 2026-09-19 20:58:20+02:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-09-19T18:58:20.935015532Z 2026-09-19 20:58:20+02:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 9.6.0-1.el9 started.
+2026-09-19T18:58:21.788768456Z '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+2026-09-19T18:58:22.272684505Z 2026-09-19T18:58:21.829539Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2026-09-19T18:58:22.272733958Z 2026-09-19T18:58:22.266049Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 9.6.0) starting as process 1
+2026-09-19T18:58:22.272746143Z 2026-09-19T18:58:22.266094Z 0 [System] [MY-015590] [Server] MySQL Server has access to 8 logical CPUs.
+2026-09-19T18:58:22.272755693Z 2026-09-19T18:58:22.266119Z 0 [System] [MY-015590] [Server] MySQL Server has access to 24501673984 bytes of physical memory.
+2026-09-19T18:58:22.280970284Z 2026-09-19T18:58:22.280807Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-09-19T18:58:23.178457611Z 2026-09-19T18:58:23.178195Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-09-19T18:58:23.915403357Z 2026-09-19T18:58:23.913565Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-09-19T18:58:23.915424632Z 2026-09-19T18:58:23.913803Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-09-19T18:58:23.925015433Z 2026-09-19T18:58:23.924867Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2026-09-19T18:58:23.998301095Z 2026-09-19T18:58:23.998075Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+2026-09-19T18:58:23.998352987Z 2026-09-19T18:58:23.998263Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '9.6.0'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.

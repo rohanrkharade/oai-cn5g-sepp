@@ -193,21 +193,19 @@ void sepp_http2_sbi_server::start() {
           full_path += req.uri().raw_query;
         }
 
-        nlohmann::json resp_data;
-        if (handle_nf_service_request(authority, full_path, req.method(), *body,
-                                      resp_data)) {
-          int status_code = oai::common::sbi::http_status_code::OK;
-          if (resp_data.is_object() && resp_data.contains("status") &&
-              resp_data["status"].is_number_integer()) {
-            status_code = resp_data["status"].get<int>();
+        nf_http_response resp_data;
+        if (handle_nf_service_request(authority, full_path, req.method(), *body, resp_data)) {
+          header_map headers;
+          for (const auto& [key, value] : resp_data.headers) {
+            if (key == "content-type" || key == "location" || key == "retry-after")
+              headers.emplace(key, header_value{value});
           }
-
-          response.write_head(status_code, JSON_HEADERS);
-          response.end(resp_data.dump());
+          response.write_head(resp_data.status_code, headers);
+          response.end(resp_data.status_code == 204 ? "" : resp_data.body);
         } else {
           response.write_head(
-              oai::common::sbi::http_status_code::NOT_IMPLEMENTED);
-          response.end("NF service forwarding not implemented or failed");
+              oai::common::sbi::http_status_code::BAD_GATEWAY);
+          response.end("NF service forwarding failed");
         }
       }
     });
@@ -244,7 +242,7 @@ bool sepp_http2_sbi_server::handle_telescopic_mapping(
 bool sepp_http2_sbi_server::handle_nf_service_request(
     const std::string &authority, const std::string &path,
     const std::string &method, const std::string &body,
-    nlohmann::json &resp_data) {
+    oai::sepp::app::nf_http_response &resp_data) {
   return sepp_app_inst->handle_nf_service_request(authority, path, method, body,
                                                   resp_data);
 }

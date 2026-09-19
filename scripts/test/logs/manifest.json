@@ -1,0 +1,187 @@
+{
+  "compose": "docker-compose-basic-nrf-lbo-roaming.yaml",
+  "since": null,
+  "until": "2026-09-19T19:52:54.163955+00:00",
+  "containers": [
+    {
+      "service": "mysql-A",
+      "container": "mysql-A",
+      "image": "mysql:9.6.0",
+      "image_id": "sha256:f4bf110498531f91e80936e0181b8b63bac636481065a63df2e63e1aac2b1548",
+      "started_at": "2026-09-19T18:58:19.754755123Z",
+      "running": true,
+      "health": "not configured"
+    },
+    {
+      "service": "oai-nrf-A",
+      "container": "nrf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-nrf:roaming-lbo",
+      "image_id": "sha256:fc90e046b259bc642b48fc3d57e5cefa64f62eee971bb23c066c44b3be231f0d",
+      "started_at": "2026-09-19T18:58:19.798153934Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udr-A",
+      "container": "udr.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-udr:roaming-lbo",
+      "image_id": "sha256:bf6027cc55c953dede64c80dc915aa5782739372608bf25fad1ae186e9e3c5b2",
+      "started_at": "2026-09-19T18:58:20.552983476Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udm-A",
+      "container": "udm.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-udm:roaming-lbo",
+      "image_id": "sha256:5c7b2dc51094748a65086a44a5d21605f14b0f0f41e81f8666a47d812aca3b8f",
+      "started_at": "2026-09-19T18:58:21.365735517Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-ausf-A",
+      "container": "ausf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-ausf:roaming-lbo",
+      "image_id": "sha256:acc82e8078c5aaa42d871f86008b39a0f6929999ac5440b01c2c354600d077f2",
+      "started_at": "2026-09-19T18:58:21.840908625Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-amf-A",
+      "container": "amf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-amf:roaming-lbo",
+      "image_id": "sha256:1870deadf35d8a24e1e7c241cef678fd649d8458f345c0b51fc8b7109a80027a",
+      "started_at": "2026-09-19T18:58:22.303376839Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-smf-A",
+      "container": "smf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-smf:roaming-lbo",
+      "image_id": "sha256:aa04fee72db3b21027a03594b42fa51f90f5481231e48d722868aa928207ef57",
+      "started_at": "2026-09-19T18:58:22.785428706Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-upf-A",
+      "container": "upf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-upf:roaming-lbo",
+      "image_id": "sha256:434bfd0cf88021f8a2615e422dc42be90802b88c6dc23c5463cc778cf8a1212a",
+      "started_at": "2026-09-19T18:58:23.384934845Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-sepp-A",
+      "container": "sepp.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-sepp:roaming-lbo",
+      "image_id": "sha256:5defdd2e24ab035b1087607d0d4bb2dda0ce7051c77faf01aba737ecff2e2c41",
+      "started_at": "2026-09-19T18:58:20.585909497Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "ueransim-vplmnA",
+      "container": "ue-plmnB-roaming-A",
+      "image": "ueransim:roaming-lbo",
+      "image_id": "sha256:f78f07be75847549345abb28ec7defab30ebfe0752f6323c7a2f2a9c63c5d08e",
+      "started_at": "2026-09-19T19:51:21.541631564Z",
+      "running": true,
+      "health": "not configured"
+    },
+    {
+      "service": "mysql-B",
+      "container": "mysql-B",
+      "image": "mysql:9.6.0",
+      "image_id": "sha256:f4bf110498531f91e80936e0181b8b63bac636481065a63df2e63e1aac2b1548",
+      "started_at": "2026-09-19T18:58:19.808094603Z",
+      "running": true,
+      "health": "not configured"
+    },
+    {
+      "service": "oai-nrf-B",
+      "container": "nrf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-nrf:roaming-lbo",
+      "image_id": "sha256:fc90e046b259bc642b48fc3d57e5cefa64f62eee971bb23c066c44b3be231f0d",
+      "started_at": "2026-09-19T18:58:19.806522371Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udr-B",
+      "container": "udr.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-udr:roaming-lbo",
+      "image_id": "sha256:bf6027cc55c953dede64c80dc915aa5782739372608bf25fad1ae186e9e3c5b2",
+      "started_at": "2026-09-19T18:58:20.548704082Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udm-B",
+      "container": "udm.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-udm:roaming-lbo",
+      "image_id": "sha256:5c7b2dc51094748a65086a44a5d21605f14b0f0f41e81f8666a47d812aca3b8f",
+      "started_at": "2026-09-19T18:58:21.419969591Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-ausf-B",
+      "container": "ausf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-ausf:roaming-lbo",
+      "image_id": "sha256:acc82e8078c5aaa42d871f86008b39a0f6929999ac5440b01c2c354600d077f2",
+      "started_at": "2026-09-19T18:58:21.929956604Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-amf-B",
+      "container": "amf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-amf:roaming-lbo",
+      "image_id": "sha256:1870deadf35d8a24e1e7c241cef678fd649d8458f345c0b51fc8b7109a80027a",
+      "started_at": "2026-09-19T18:58:22.468452468Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-smf-B",
+      "container": "smf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-smf:roaming-lbo",
+      "image_id": "sha256:aa04fee72db3b21027a03594b42fa51f90f5481231e48d722868aa928207ef57",
+      "started_at": "2026-09-19T18:58:23.215055363Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-upf-B",
+      "container": "upf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-upf:roaming-lbo",
+      "image_id": "sha256:434bfd0cf88021f8a2615e422dc42be90802b88c6dc23c5463cc778cf8a1212a",
+      "started_at": "2026-09-19T18:58:23.842279551Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-sepp-B",
+      "container": "sepp.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-sepp:roaming-lbo",
+      "image_id": "sha256:5defdd2e24ab035b1087607d0d4bb2dda0ce7051c77faf01aba737ecff2e2c41",
+      "started_at": "2026-09-19T18:58:20.59153321Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "lbo-dn",
+      "container": "lbo-dn",
+      "image": "ueransim:roaming-lbo",
+      "image_id": "sha256:f78f07be75847549345abb28ec7defab30ebfe0752f6323c7a2f2a9c63c5d08e",
+      "started_at": "2026-09-19T18:58:19.730830118Z",
+      "running": true,
+      "health": "not configured"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+mcc: '262'
+mnc: '10'
+nci: '0x000000010'
+idLength: 32
+tac: 40960
+linkIp: 192.168.73.140
+ngapIp: 192.168.73.140
+gtpIp: 192.168.73.140
+amfConfigs:
+- address: 192.168.73.137
+  port: 38412
+slices:
+- sst: 222
+  sd: 123
+ignoreStreamIds: true

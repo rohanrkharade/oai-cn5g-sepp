@@ -1,0 +1,55 @@
+version: '3.8'
+services:
+  ueransim-homeA:
+    image: ueransim:roaming-lbo
+    container_name: ue-home-A
+    privileged: true
+    volumes:
+    - ./conf/ueransim:/ueransim/config
+    entrypoint: /bin/bash
+    command:
+    - -c
+    - 'sleep 50
+
+      nr-gnb -c /ueransim/config/gnb-homeA.yaml &
+
+      sleep 5
+
+      exec nr-ue-ping -c /ueransim/config/ue-homeA.yaml
+
+      '
+    networks:
+      public_netA:
+        ipv4_address: 192.168.71.141
+  ueransim-homeB:
+    image: ueransim:roaming-lbo
+    container_name: ue-home-B
+    privileged: true
+    volumes:
+    - ./conf/ueransim:/ueransim/config
+    entrypoint: /bin/bash
+    command:
+    - -c
+    - 'sleep 50
+
+      nr-gnb -c /ueransim/config/gnb-homeB.yaml &
+
+      sleep 5
+
+      exec nr-ue-ping -c /ueransim/config/ue-homeB.yaml
+
+      '
+    networks:
+      public_netB:
+        ipv4_address: 192.168.73.140
+  home-dn-B:
+    image: ueransim:roaming-lbo
+    container_name: home-dn-B
+    entrypoint:
+    - /bin/sh
+    - -c
+    command:
+    - exec sleep infinity
+    networks:
+      public_netB:
+        ipv4_address: 192.168.73.150

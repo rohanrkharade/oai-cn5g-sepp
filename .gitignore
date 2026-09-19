@@ -1,0 +1,9 @@
+/scripts/test/.env
+/scripts/test/__pycache__/
+/scripts/test/conf/certs/sslkeylog.log
+/scripts/test/logs/*
+!/scripts/test/logs/*.txt
+!/scripts/test/logs/manifest.json
+!/scripts/test/logs/results.json
+!/scripts/test/logs/*.pcap
+!/scripts/test/logs/*.pcapng

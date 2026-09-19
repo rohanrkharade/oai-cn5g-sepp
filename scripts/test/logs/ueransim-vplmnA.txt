@@ -1,0 +1,54 @@
+2026-09-19T19:51:21.665636818Z Waiting 50s for OAI AMF-A...
+2026-09-19T19:52:11.667701940Z Starting gNB (PLMN A 208/14)...
+2026-09-19T19:52:11.703152231Z UERANSIM v3.3.0
+2026-09-19T19:52:11.704760832Z [2026-09-19 19:52:11.704] [sctp] [info] Trying to establish SCTP connection... (192.168.71.137:38412)
+2026-09-19T19:52:11.712636737Z [2026-09-19 19:52:11.712] [sctp] [info] SCTP connection established (192.168.71.137:38412)
+2026-09-19T19:52:11.712976958Z [2026-09-19 19:52:11.712] [sctp] [debug] SCTP association setup ascId[139]
+2026-09-19T19:52:11.713002358Z [2026-09-19 19:52:11.712] [ngap] [debug] Sending NG Setup Request
+2026-09-19T19:52:11.714332546Z [2026-09-19 19:52:11.714] [ngap] [debug] NG Setup Response received
+2026-09-19T19:52:11.714362988Z [2026-09-19 19:52:11.714] [ngap] [info] NG Setup procedure is successful
+2026-09-19T19:52:16.671997853Z Starting UE (PLMN B 262/10 Roaming into PLMN A)...
+2026-09-19T19:52:16.690679285Z UERANSIM v3.3.0
+2026-09-19T19:52:16.692942954Z [2026-09-19 19:52:16.692] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+2026-09-19T19:52:16.693007235Z [2026-09-19 19:52:16.692] [rrc] [debug] UE[1] new signal detected
+2026-09-19T19:52:16.693992835Z [2026-09-19 19:52:16.693] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+2026-09-19T19:52:16.694447282Z [2026-09-19 19:52:16.693] [nas] [info] Selected plmn[208/14] (home plmn[262/10])
+2026-09-19T19:52:16.695122644Z [2026-09-19 19:52:16.693] [rrc] [info] Selected cell plmn[208/14] tac[40960] category[SUITABLE]
+2026-09-19T19:52:16.695335084Z [2026-09-19 19:52:16.695] [rrc] [info] RRC Setup for UE[1]
+2026-09-19T19:52:16.695421504Z [2026-09-19 19:52:16.693] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+2026-09-19T19:52:16.696085326Z [2026-09-19 19:52:16.693] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+2026-09-19T19:52:16.696484722Z [2026-09-19 19:52:16.696] [ngap] [debug] Initial NAS message received from UE[1]
+2026-09-19T19:52:16.696718388Z [2026-09-19 19:52:16.693] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+2026-09-19T19:52:16.697304175Z [2026-09-19 19:52:16.694] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+2026-09-19T19:52:16.697906180Z [2026-09-19 19:52:16.694] [nas] [debug] Sending Initial Registration
+2026-09-19T19:52:16.698351386Z [2026-09-19 19:52:16.694] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+2026-09-19T19:52:16.698910588Z [2026-09-19 19:52:16.694] [rrc] [debug] Sending RRC Setup Request
+2026-09-19T19:52:16.699365736Z [2026-09-19 19:52:16.695] [rrc] [info] RRC connection established
+2026-09-19T19:52:16.700013313Z [2026-09-19 19:52:16.695] [rrc] [info] UE switches to state [RRC-CONNECTED]
+2026-09-19T19:52:16.700494818Z [2026-09-19 19:52:16.695] [nas] [info] UE switches to state [CM-CONNECTED]
+2026-09-19T19:52:16.761484868Z [2026-09-19 19:52:16.760] [nas] [debug] Authentication Request received
+2026-09-19T19:52:16.762129081Z [2026-09-19 19:52:16.760] [nas] [debug] Received SQN [000000000540]
+2026-09-19T19:52:16.762369426Z [2026-09-19 19:52:16.760] [nas] [debug] SQN-MS [000000000000]
+2026-09-19T19:52:16.797260178Z [2026-09-19 19:52:16.796] [nas] [debug] Security Mode Command received
+2026-09-19T19:52:16.797788706Z [2026-09-19 19:52:16.797] [nas] [debug] Selected integrity[1] ciphering[1]
+2026-09-19T19:52:16.841769434Z [2026-09-19 19:52:16.841] [ngap] [debug] Initial Context Setup Request received
+2026-09-19T19:52:16.843767751Z [2026-09-19 19:52:16.843] [nas] [debug] Registration accept received
+2026-09-19T19:52:16.844294935Z [2026-09-19 19:52:16.843] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+2026-09-19T19:52:16.844747961Z [2026-09-19 19:52:16.843] [nas] [debug] Sending Registration Complete
+2026-09-19T19:52:16.845194930Z [2026-09-19 19:52:16.843] [nas] [info] Initial Registration is successful
+2026-09-19T19:52:16.845661769Z [2026-09-19 19:52:16.844] [nas] [debug] Sending PDU Session Establishment Request
+2026-09-19T19:52:16.846287774Z [2026-09-19 19:52:16.844] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+2026-09-19T19:52:17.117741308Z [2026-09-19 19:52:17.117] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+2026-09-19T19:52:17.120810198Z [2026-09-19 19:52:17.119] [nas] [debug] PDU Session Establishment Accept received
+2026-09-19T19:52:17.120872446Z [2026-09-19 19:52:17.119] [nas] [info] PDU Session establishment is successful PSI[1]
+2026-09-19T19:52:17.150037435Z [2026-09-19 19:52:17.149] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 12.1.1.130] is up.
+2026-09-19T19:52:17.150839553Z [traffic] PDU session ready: ping google.com, count=3, interface=uesimtun0
+2026-09-19T19:52:17.208427003Z PING google.com (142.251.31.113) from 12.1.1.130 uesimtun0: 56(84) bytes of data.
+2026-09-19T19:52:17.208458754Z 64 bytes from 142.251.31.113: icmp_seq=1 ttl=105 time=32.2 ms
+2026-09-19T19:52:18.202976253Z 64 bytes from 142.251.31.113: icmp_seq=2 ttl=105 time=25.9 ms
+2026-09-19T19:52:19.202674434Z 64 bytes from 142.251.31.113: icmp_seq=3 ttl=105 time=24.4 ms
+2026-09-19T19:52:19.202732114Z 
+2026-09-19T19:52:19.202743208Z --- google.com ping statistics ---
+2026-09-19T19:52:19.202751535Z 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+2026-09-19T19:52:19.202759570Z rtt min/avg/max/mdev = 24.443/27.509/32.204/3.370 ms
+2026-09-19T19:52:19.204153460Z [traffic] Google ping finished: interface=uesimtun0, exit_status=0

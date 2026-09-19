@@ -329,7 +329,7 @@ bool sepp_app::handle_nf_service_request(const std::string &authority,
                                          const std::string &path,
                                          const std::string &method,
                                          const std::string &body,
-                                         nlohmann::json &resp_data) {
+                                         oai::sepp::app::nf_http_response &resp_data) {
   if (!m_sepp_n32f_forward_inst) {
     Logger::sepp_app().warn("N32-f forward instance is not initialized");
     return false;
@@ -359,7 +359,7 @@ bool sepp_app::handle_nf_service_request_prins(const std::string &authority,
                                                const std::string &path,
                                                const std::string &method,
                                                const std::string &body,
-                                               nlohmann::json &resp_data) {
+                                               oai::sepp::app::nf_http_response &resp_data) {
   nlohmann::json req_body;
   if (!m_sepp_n32f_forward_inst->create_n32f_process_request(
           authority, path, method, body, req_body)) {
@@ -415,8 +415,12 @@ bool sepp_app::handle_nf_service_request_prins(const std::string &authority,
                                decrypted_body.c_str());
     }
 
-    resp_data = decrypted_body.empty() ? nlohmann::json::object()
-                                       : nlohmann::json::parse(decrypted_body);
+    std::string status, response_path, response_authority;
+    if (!m_sepp_n32f_forward_inst->parse_aad(jose::base64url_decode(aad_b64),
+            status, response_path, response_authority, resp_data.headers)) return false;
+    resp_data.status_code = std::stoi(status);
+    if (resp_data.status_code < 100 || resp_data.status_code > 599) return false;
+    resp_data.body = decrypted_body;
     return true;
   } catch (const std::exception &e) {
     Logger::sepp_app().warn(
@@ -430,7 +434,7 @@ bool sepp_app::handle_nf_service_request_tls(const std::string &authority,
                                              const std::string &path,
                                              const std::string &method,
                                              const std::string &body,
-                                             nlohmann::json &resp_data) {
+                                             oai::sepp::app::nf_http_response &resp_data) {
   const std::string target_uri = *m_remote_sepp_url + path;
 
   method_e http_method = method_e::GET;
@@ -468,18 +472,11 @@ bool sepp_app::handle_nf_service_request_tls(const std::string &authority,
   Logger::sepp_app().info("Direct HTTP response status: %ld",
                           http_response.status_code);
 
-  if (http_response.status_code >= 200 && http_response.status_code < 300) {
-    try {
-      resp_data = nlohmann::json::parse(http_response.body);
-    } catch (...) {
-      resp_data = {{"status", http_response.status_code}};
-    }
-    return true;
-  }
-
-  Logger::sepp_app().error("Forwarding failed with status: %ld",
-                           http_response.status_code);
-  return false;
+  if (http_response.status_code == 0) return false;
+  resp_data.status_code = http_response.status_code;
+  resp_data.body = http_response.body;
+  for (const auto& header : http_response.headers) resp_data.headers[header.first] = header.second;
+  return true;
 }
 
 //------------------------------------------------------------------------------

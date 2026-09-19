@@ -73,7 +73,7 @@ public:
                                  const std::string &path,
                                  const std::string &method,
                                  const std::string &body,
-                                 nlohmann::json &resp_data);
+                                 oai::sepp::app::nf_http_response &resp_data);
 
   bool handle_n32f_forward(
       const nlohmann::json &req_data, nlohmann::json &resp_data,
@@ -88,13 +88,13 @@ private:
                                        const std::string &path,
                                        const std::string &method,
                                        const std::string &body,
-                                       nlohmann::json &resp_data);
+                                       oai::sepp::app::nf_http_response &resp_data);
 
   bool handle_nf_service_request_tls(const std::string &authority,
                                      const std::string &path,
                                      const std::string &method,
                                      const std::string &body,
-                                     nlohmann::json &resp_data);
+                                     oai::sepp::app::nf_http_response &resp_data);
 
   sepp_profile m_nf_instance_profile;
   std::string m_sepp_instance_id;

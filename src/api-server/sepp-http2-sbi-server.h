@@ -52,7 +52,7 @@ private:
                                  const std::string &path,
                                  const std::string &method,
                                  const std::string &body,
-                                 nlohmann::json &resp_data);
+                                 oai::sepp::app::nf_http_response &resp_data);
   // std::unique_ptr<oai::sepp::app::sepp_app> m_sepp_app_inst;
   // std::shared_ptr<oai::http::http_client> m_http_client_inst;
   // std::shared_ptr<oai::config::sepp::sepp_config> m_sepp_cfg_inst;

@@ -1,0 +1,1266 @@
+2026-09-19T18:58:21.215728681Z [+] Detecting network interfaces...
+2026-09-19T18:58:21.232172470Z [+] Target NBI Interface: eth0
+2026-09-19T18:58:21.232457096Z [+] Target SBI Interface: eth1
+2026-09-19T18:58:21.247550993Z [+] Configuration updated successfully!
+2026-09-19T18:58:21.281984768Z [2026-09-19 20:58:21.281] [sepp_app] [debug] Reading SEPP configuration from file: /openair-sepp/etc/config.yaml
+2026-09-19T18:58:21.324695622Z [2026-09-19 20:58:21.324] [config ] [debug] Unknown NF amf in configuration. Ignored
+2026-09-19T18:58:21.324727998Z [2026-09-19 20:58:21.324] [config ] [debug] Unknown NF smf in configuration. Ignored
+2026-09-19T18:58:21.324739197Z [2026-09-19 20:58:21.324] [config ] [debug] Unknown NF upf in configuration. Ignored
+2026-09-19T18:58:21.324747072Z [2026-09-19 20:58:21.324] [config ] [debug] Unknown NF udm in configuration. Ignored
+2026-09-19T18:58:21.324755620Z [2026-09-19 20:58:21.324] [config ] [debug] Unknown NF udr in configuration. Ignored
+2026-09-19T18:58:21.324764233Z [2026-09-19 20:58:21.324] [config ] [debug] Unknown NF ausf in configuration. Ignored
+2026-09-19T18:58:21.367215255Z [2026-09-19 20:58:21.367] [config ] [info] Reading NF configuration from /openair-sepp/etc/config.yaml
+2026-09-19T18:58:21.408980616Z [2026-09-19 20:58:21.408] [config ] [debug] Unknown NF amf in configuration. Ignored
+2026-09-19T18:58:21.409175964Z [2026-09-19 20:58:21.409] [config ] [debug] Unknown NF smf in configuration. Ignored
+2026-09-19T18:58:21.409333987Z [2026-09-19 20:58:21.409] [config ] [debug] Unknown NF upf in configuration. Ignored
+2026-09-19T18:58:21.409474484Z [2026-09-19 20:58:21.409] [config ] [debug] Unknown NF udm in configuration. Ignored
+2026-09-19T18:58:21.409632713Z [2026-09-19 20:58:21.409] [config ] [debug] Unknown NF udr in configuration. Ignored
+2026-09-19T18:58:21.409780437Z [2026-09-19 20:58:21.409] [config ] [debug] Unknown NF ausf in configuration. Ignored
+2026-09-19T18:58:21.410431928Z [2026-09-19 20:58:21.410] [config ] [debug] Validating configuration of log_level
+2026-09-19T18:58:21.411687916Z [2026-09-19 20:58:21.410] [config ] [debug] Validating configuration of register_nf
+2026-09-19T18:58:21.411715024Z [2026-09-19 20:58:21.410] [config ] [debug] Validating configuration of http_version
+2026-09-19T18:58:21.411723919Z [2026-09-19 20:58:21.410] [config ] [debug] Validating configuration of http_request_timeout
+2026-09-19T18:58:21.411732399Z [2026-09-19 20:58:21.410] [config ] [debug] Validating configuration of nrf
+2026-09-19T18:58:21.416070065Z [2026-09-19 20:58:21.415] [config ] [debug] Validating configuration of sepp
+2026-09-19T18:58:21.422981567Z [2026-09-19 20:58:21.422] [config ] [debug] Validating configuration of database
+2026-09-19T18:58:21.423980668Z [2026-09-19 20:58:21.422] [config ] [debug] Validating configuration of enable_roaming
+2026-09-19T18:58:21.424014784Z [2026-09-19 20:58:21.423] [config ] [info] ==== OPENAIRINTERFACE sepp vBranch: main Abrev. Hash: adeae4a Date: Thu Sep 17 06:20:14 2026 +0200 ====
+2026-09-19T18:58:21.424074430Z [2026-09-19 20:58:21.423] [config ] [info] Basic Configuration:
+2026-09-19T18:58:21.424107483Z [2026-09-19 20:58:21.423] [config ] [info]   - log_level..................................: debug
+2026-09-19T18:58:21.424116030Z [2026-09-19 20:58:21.423] [config ] [info]   - register_nf................................: Yes
+2026-09-19T18:58:21.424172611Z [2026-09-19 20:58:21.423] [config ] [info]   - http_version...............................: 2
+2026-09-19T18:58:21.424179867Z [2026-09-19 20:58:21.423] [config ] [info]   TLS:
+2026-09-19T18:58:21.424186308Z [2026-09-19 20:58:21.423] [config ] [info]     - Enable TLS.................................: No
+2026-09-19T18:58:21.424192911Z [2026-09-19 20:58:21.423] [config ] [info]   - HTTP Request Timeout.......................: 3000 (ms)
+2026-09-19T18:58:21.424199266Z [2026-09-19 20:58:21.423] [config ] [info]   Roaming:
+2026-09-19T18:58:21.424206193Z [2026-09-19 20:58:21.423] [config ] [info]     - Enable Roaming.............................: Yes
+2026-09-19T18:58:21.426463361Z [2026-09-19 20:58:21.423] [config ] [info]     - Roaming Partners:
+2026-09-19T18:58:21.426492523Z [2026-09-19 20:58:21.423] [config ] [info]       MCC: 262, MNC: 10
+2026-09-19T18:58:21.426501207Z [2026-09-19 20:58:21.423] [config ] [info]       MCC: 228, MNC: 06
+2026-09-19T18:58:21.426509283Z [2026-09-19 20:58:21.423] [config ] [info]   sepp:
+2026-09-19T18:58:21.426542172Z [2026-09-19 20:58:21.423] [config ] [info]     - host.....................................: sepp.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.426552025Z [2026-09-19 20:58:21.423] [config ] [info]     - SBI
+2026-09-19T18:58:21.426559222Z [2026-09-19 20:58:21.423] [config ] [info]       + URL....................................: sepp.5gc.mnc14.mcc208.3gppnetwork.org:8080
+2026-09-19T18:58:21.426565938Z [2026-09-19 20:58:21.423] [config ] [info]       + API Version............................: v1
+2026-09-19T18:58:21.426598576Z [2026-09-19 20:58:21.423] [config ] [info]       + IPv4 Address ..........................: 192.168.71.132
+2026-09-19T18:58:21.426611668Z [2026-09-19 20:58:21.423] [config ] [info]     - NBI
+2026-09-19T18:58:21.426618065Z [2026-09-19 20:58:21.423] [config ] [info]       + URL....................................: sepp.5gc.mnc14.mcc208.3gppnetwork.org:8080
+2026-09-19T18:58:21.426624582Z [2026-09-19 20:58:21.423] [config ] [info]       + API Version............................: v1
+2026-09-19T18:58:21.426635498Z [2026-09-19 20:58:21.423] [config ] [info]       + IPv4 Address ..........................: 192.168.72.111
+2026-09-19T18:58:21.426642096Z [2026-09-19 20:58:21.423] [config ] [info] Peer NF Configuration:
+2026-09-19T18:58:21.426648562Z [2026-09-19 20:58:21.423] [config ] [info]   nrf:
+2026-09-19T18:58:21.426655119Z [2026-09-19 20:58:21.423] [config ] [info]     - host.....................................: nrf.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.426684897Z [2026-09-19 20:58:21.423] [config ] [info]     - SBI
+2026-09-19T18:58:21.426694429Z [2026-09-19 20:58:21.423] [config ] [info]       + URL....................................: nrf.5gc.mnc14.mcc208.3gppnetwork.org:8080
+2026-09-19T18:58:21.426715816Z [2026-09-19 20:58:21.423] [config ] [info]       + API Version............................: v1
+2026-09-19T18:58:21.426723970Z [2026-09-19 20:58:21.423] [config ] [info]       + IPv4 Address ..........................: 192.168.72.111
+2026-09-19T18:58:21.426731675Z [2026-09-19 20:58:21.423] [sepp_client] [info] HTTP Client successfully initiated on interface eth1 with timeout 1000 ms, HTTP version 2
+2026-09-19T18:58:21.426738434Z [2026-09-19 20:58:21.423] [sepp_client] [info] HTTP Client successfully initiated on interface eth0 with timeout 1000 ms, HTTP version 2
+2026-09-19T18:58:21.426745595Z [2026-09-19 20:58:21.423] [sepp_app] [start] Starting SEPP Application...
+2026-09-19T18:58:21.426775484Z [2026-09-19 20:58:21.423] [sepp_app] [debug] - NF instance info
+2026-09-19T18:58:21.426783020Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Instance ID: 998ccb02-0c3c-4882-8454-ef0cb3fda81c
+2026-09-19T18:58:21.426790126Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Instance name: OAI-SEPP
+2026-09-19T18:58:21.426796993Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Instance type: SEPP
+2026-09-19T18:58:21.426804704Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Instance fqdn: sepp.5gc.mnc14.mcc208.3gppnetwork.org
+2026-09-19T18:58:21.426811422Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Status: REGISTERED
+2026-09-19T18:58:21.426818121Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     HeartBeat timer: 50
+2026-09-19T18:58:21.426824406Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Priority: 1
+2026-09-19T18:58:21.426853204Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     Capacity: 100
+2026-09-19T18:58:21.426862456Z [2026-09-19 20:58:21.423] [sepp_app] [debug]     IPv4 Addr:
+2026-09-19T18:58:21.426870535Z [2026-09-19 20:58:21.423] [sepp_app] [debug]         192.168.71.132
+2026-09-19T18:58:21.426877864Z [2026-09-19 20:58:21.423] [sepp_app] [debug] 	SEPP Info
+2026-09-19T18:58:21.426885311Z [2026-09-19 20:58:21.423] [sepp_app] [debug] 		 SeppPrefix: oai-sepp-prefix
+2026-09-19T18:58:21.426895424Z [2026-09-19 20:58:21.423] [sepp_app] [debug] 		 SeppPorts:
+2026-09-19T18:58:21.426901976Z [2026-09-19 20:58:21.423] [sepp_app] [debug] 			 Interface: n32c - Port: 443
+2026-09-19T18:58:21.426910805Z [2026-09-19 20:58:21.423] [sepp_app] [debug] 			 Interface: n32f - Port: 443
+2026-09-19T18:58:21.426937705Z [2026-09-19 20:58:21.423] [sepp_app] [debug] 		 SeppPorts:
+2026-09-19T18:58:21.426946696Z [2026-09-19 20:58:21.423] [sepp_app] [debug] sepp profile to json:
+2026-09-19T18:58:21.426957758Z  {"capacity":100,"custom_info":null,"fqdn":"sepp.5gc.mnc14.mcc208.3gppnetwork.org","heartBeatTimer":50,"ipv4Addresses":["192.168.71.132"],"nfInstanceId":"998ccb02-0c3c-4882-8454-ef0cb3fda81c","nfInstanceName":"OAI-SEPP","nfServices":[{"ipEndPoints":[{"ipv4Address":"192.168.71.132","port":8080,"transport":"TCP"}],"nfServiceStatus":"REGISTERED","scheme":"http","serviceInstanceId":"nsepp-telescopic","serviceName":"nsepp-telescopic","versions":[{"apiFullVersion":"1.0.0","apiVersionInUri":"v1"}]}],"nfStatus":"REGISTERED","nfType":"SEPP","priority":1,"sNssais":[],"seppInfo":{"n32Purposes":["ROAMING"],"remotePlmnList":[{"mcc":"262","mnc":"10"}],"seppPorts":{"n32c":443,"n32f":443},"seppPrefix":"oai-sepp-prefix"}}
+2026-09-19T18:58:21.426992231Z [2026-09-19 20:58:21.423] [sepp_sbi] [info] Sending NF registration request to NRF: http://nrf.5gc.mnc14.mcc208.3gppnetwork.org:8080/nnrf-nfm/v1/nf-instances/998ccb02-0c3c-4882-8454-ef0cb3fda81c
+2026-09-19T18:58:21.427021846Z [2026-09-19 20:58:21.423] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:21.436936089Z [2026-09-19 20:58:21.436] [sepp_sbi] [debug] NF registration successful
+2026-09-19T18:58:21.436967656Z [2026-09-19 20:58:21.436] [sepp_app] [info] NRF Task Created
+2026-09-19T18:58:21.436977741Z [2026-09-19 20:58:21.436] [sepp_app] [info] SEPP is configured as C-SEPP
+2026-09-19T18:58:21.937062638Z [2026-09-19 20:58:21.936] [sepp_app] [info] Creating N32-c capability exchange request via model
+2026-09-19T18:58:21.937149626Z [2026-09-19 20:58:21.936] [sepp_app] [info] Initiating N32-c capability exchange with peer SEPP: http://sepp.5gc.mnc10.mcc262.3gppnetwork.org:8080/n32c-handshake/v1/exchange-capability
+2026-09-19T18:58:21.987402883Z [2026-09-19 20:58:21.987] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:21.991007200Z [2026-09-19 20:58:21.990] [sepp_app] [info] Received HTTP response with status code: 200
+2026-09-19T18:58:21.991039619Z [2026-09-19 20:58:21.990] [sepp_app] [info] Processing N32-c capability exchange response
+2026-09-19T18:58:21.991049404Z [2026-09-19 20:58:21.990] [sepp_app] [info] Capability exchange response from peer SEPP: http://sepp.5gc.mnc10.mcc262.3gppnetwork.org:8080
+2026-09-19T18:58:21.991057544Z [2026-09-19 20:58:21.990] [sepp_app] [info] Peer SEPP confirmed 3GppSbiTargetApiRootSupported: true
+2026-09-19T18:58:21.991064976Z [2026-09-19 20:58:21.990] [sepp_app] [info] Selected Security Capability: PRINS
+2026-09-19T18:58:21.991072499Z [2026-09-19 20:58:21.990] [sepp_app] [info] N32-c capability exchange succeeded with http://sepp.5gc.mnc10.mcc262.3gppnetwork.org:8080/n32c-handshake/v1/exchange-capability
+2026-09-19T18:58:21.991081309Z [2026-09-19 20:58:21.990] [sepp_app] [info] Security capability is PRINS. Performing Parameter Exchange...
+2026-09-19T18:58:21.991088983Z [2026-09-19 20:58:21.990] [sepp_app] [info] Creating SecParamExchReqData via OpenAPI model
+2026-09-19T18:58:21.991096510Z [2026-09-19 20:58:21.990] [sepp_app] [info] Initiating N32-c parameter exchange with http://sepp.5gc.mnc10.mcc262.3gppnetwork.org:8080/n32c-handshake/v1/exchange-params
+2026-09-19T18:58:21.991104663Z [2026-09-19 20:58:21.990] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:21.993728814Z [2026-09-19 20:58:21.993] [sepp_app] [info] Parameter exchange status code: 200
+2026-09-19T18:58:21.993742512Z [2026-09-19 20:58:21.993] [sepp_app] [info] Processing N32-c parameter exchange response using model
+2026-09-19T18:58:21.993751377Z [2026-09-19 20:58:21.993] [sepp_app] [info] Context ID established: 9e521285-d520-42db-ad3c-f91327aaf57c
+2026-09-19T18:58:21.993777183Z [2026-09-19 20:58:21.993] [sepp_app] [info] Negotiated JWE cipher: A128GCM
+2026-09-19T18:58:21.993783861Z [2026-09-19 20:58:21.993] [sepp_app] [info] Negotiated JWS cipher: ES256
+2026-09-19T18:58:21.993789383Z [2026-09-19 20:58:21.993] [sepp_app] [info] N32-c Parameter Exchange successfully established
+2026-09-19T18:58:21.993872631Z [2026-09-19 20:58:21.993] [sepp_nbi] [info] NBI TLS disabled (disable_tls: yes). Starting plain NBI HTTP2 server on 192.168.72.111:8080...
+2026-09-19T18:58:21.999542561Z [2026-09-19 20:58:21.998] [sepp_sbi] [info] +++++++ SBI HTTP2 TLS server being started +++++++
+2026-09-19T18:58:31.557286294Z [2026-09-19 20:58:31.556] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:58:31.557377447Z [2026-09-19 20:58:31.557] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:31.612113443Z [2026-09-19 20:58:31.611] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:58:41.648076369Z [2026-09-19 20:58:41.647] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:58:41.648168517Z [2026-09-19 20:58:41.647] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:41.658870553Z [2026-09-19 20:58:41.658] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:58:51.701072799Z [2026-09-19 20:58:51.700] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:58:51.701157048Z [2026-09-19 20:58:51.700] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:58:51.706303588Z [2026-09-19 20:58:51.706] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:59:01.727038665Z [2026-09-19 20:59:01.726] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:59:01.727108420Z [2026-09-19 20:59:01.726] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:01.731311673Z [2026-09-19 20:59:01.731] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:59:11.764053101Z [2026-09-19 20:59:11.763] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:59:11.764127943Z [2026-09-19 20:59:11.763] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:11.768375812Z [2026-09-19 20:59:11.768] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:59:19.261056475Z [2026-09-19 20:59:19.260] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=AUSF&requester-nf-type=AMF&service-names=nausf-auth&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T18:59:19.261139892Z [2026-09-19 20:59:19.260] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.271122675Z [2026-09-19 20:59:19.270] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.271277741Z [2026-09-19 20:59:19.271] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"ausfInfo":{"groupId":"oai-ausf-testgroupid","routingIndicators":["0210","9876"],"supiRanges":[{"end":"","pattern":"209238210938","start":"q0930j0c80283ncjf"}]},"capacity":100,"fqdn":"ausf.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.133"],"json_data":null,"nfInstanceId":"04369ad6-a863-4b50-929c-c7ae514b5281","nfInstanceName":"OAI-AUSF","nfServices":[],"nfStatus":"REGISTERED","nfType":"AUSF","priority":1}],"searchId":"2","validityPeriod":100000}
+2026-09-19T18:59:19.276789119Z [2026-09-19 20:59:19.276] [sepp_app] [info] Forwarding NF service request: authority=ausf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nausf-auth/v1/ue-authentications, method=POST
+2026-09-19T18:59:19.277089717Z [2026-09-19 20:59:19.276] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.344770701Z [2026-09-19 20:59:19.344] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.344830152Z [2026-09-19 20:59:19.344] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"5gAuthData":{"autn":"78b327dff2f280009344cc03410e8828","hxresStar":"f4c09d9d3ac2ef0262f164b4a8471d8b","rand":"2c81d24f132d5b03119524f4dfb67711"},"_links":{"5g-aka":{"href":"http://192.168.73.133:8080/nausf-auth/v1/ue-authentications/78b327dff2f280009344cc03410e8828/5g-aka-confirmation"}},"authType":"5G_AKA"}
+2026-09-19T18:59:19.353426262Z [2026-09-19 20:59:19.353] [sepp_app] [info] Forwarding NF service request: authority=ausf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nausf-auth/v1/ue-authentications/78b327dff2f280009344cc03410e8828/5g-aka-confirmation, method=PUT
+2026-09-19T18:59:19.353552918Z [2026-09-19 20:59:19.353] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.386875824Z [2026-09-19 20:59:19.386] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.387028816Z [2026-09-19 20:59:19.386] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"authResult":"AUTHENTICATION_SUCCESS","kseaf":"2fd32ee13ef9e46e1db937661c0091cc5b62c1e2c101115eb394509fe5bc27ab","supi":"imsi-262100000000031"}
+2026-09-19T18:59:19.403281065Z [2026-09-19 20:59:19.403] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=AMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T18:59:19.403478774Z [2026-09-19 20:59:19.403] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.413524138Z [2026-09-19 20:59:19.413] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.413634443Z [2026-09-19 20:59:19.413] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"3","validityPeriod":100000}
+2026-09-19T18:59:19.419463019Z [2026-09-19 20:59:19.418] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/nssai?plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T18:59:19.419519445Z [2026-09-19 20:59:19.418] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.444090175Z [2026-09-19 20:59:19.443] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.444146558Z [2026-09-19 20:59:19.443] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"defaultSingleNssais":[{"sd":"000001","sst":1},{"sd":"00007b","sst":222}]}
+2026-09-19T18:59:19.666239711Z [2026-09-19 20:59:19.665] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=AMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T18:59:19.666293848Z [2026-09-19 20:59:19.666] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.675721858Z [2026-09-19 20:59:19.675] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.675803795Z [2026-09-19 20:59:19.675] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"4","validityPeriod":100000}
+2026-09-19T18:59:19.680708624Z [2026-09-19 20:59:19.680] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/smf-select-data?plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T18:59:19.680897858Z [2026-09-19 20:59:19.680] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.703256084Z [2026-09-19 20:59:19.703] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.703382448Z [2026-09-19 20:59:19.703] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"subscribedSnssaiInfos":{"222-00007B":{"dnnInfos":[{"defaultDnnIndicator":true,"dnn":"oai","lboRoamingAllowed":true}]}}}
+2026-09-19T18:59:19.723854066Z [2026-09-19 20:59:19.723] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T18:59:19.723936759Z [2026-09-19 20:59:19.723] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.733266971Z [2026-09-19 20:59:19.733] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.733320380Z [2026-09-19 20:59:19.733] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"5","validityPeriod":100000}
+2026-09-19T18:59:19.738295483Z [2026-09-19 20:59:19.738] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sm-data?single-nssai={"sst":222,"sd":"00007b"}&dnn=oai&plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T18:59:19.738360996Z [2026-09-19 20:59:19.738] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.761101322Z [2026-09-19 20:59:19.760] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.761318747Z [2026-09-19 20:59:19.761] [sepp_app] [debug] PRINS: Decrypted JOSE response: [{"dnnConfigurations":{"oai":{"5gQosProfile":{"5qi":6,"arp":{"preemptCap":"NOT_PREEMPT","preemptVuln":"NOT_PREEMPTABLE","priorityLevel":1},"priorityLevel":1},"pduSessionTypes":{"defaultSessionType":"IPV4"},"sessionAmbr":{"downlink":"100Mbps","uplink":"100Mbps"},"sscModes":{"defaultSscMode":"SSC_MODE_1"}}},"singleNssai":{"sd":"00007b","sst":222}}]
+2026-09-19T18:59:19.771541675Z [2026-09-19 20:59:19.771] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T18:59:19.772344652Z [2026-09-19 20:59:19.771] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.783146559Z [2026-09-19 20:59:19.782] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.783188023Z [2026-09-19 20:59:19.783] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"6","validityPeriod":100000}
+2026-09-19T18:59:19.787936891Z [2026-09-19 20:59:19.787] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sdm-subscriptions, method=POST
+2026-09-19T18:59:19.788161909Z [2026-09-19 20:59:19.787] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.812519166Z [2026-09-19 20:59:19.812] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.812648474Z [2026-09-19 20:59:19.812] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"callbackReference":"192.168.71.138:8080/nsmf-callback/v1imsi-262100000000031/sdm-notification","dnn":"oai","monitoredResourceUris":["http://udm.5gc.mnc10.mcc262.3gppnetwork.org:8080/nudm-sdm/v1/imsi-262100000000031/sm-data"],"nfInstanceId":"902a4e6d-b06b-4565-b810-b731126d41d7","plmnId":{"mcc":"208","mnc":"14"},"singleNssai":{"sd":"00007b","sst":222},"subscriptionId":"1"}
+2026-09-19T18:59:19.849959197Z [2026-09-19 20:59:19.849] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-uecm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T18:59:19.850328340Z [2026-09-19 20:59:19.850] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.861239964Z [2026-09-19 20:59:19.860] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.861510685Z [2026-09-19 20:59:19.861] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"7","validityPeriod":100000}
+2026-09-19T18:59:19.868030298Z [2026-09-19 20:59:19.867] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-uecm/v1/imsi-262100000000031/registrations/smf-registrations/1, method=PUT
+2026-09-19T18:59:19.868227872Z [2026-09-19 20:59:19.868] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:19.895294475Z [2026-09-19 20:59:19.894] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T18:59:19.895357168Z [2026-09-19 20:59:19.895] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"dnn":"oai","pduSessionId":1,"plmnId":{"mcc":"208","mnc":"14"},"singleNssai":{"sd":"00007b","sst":222},"smfInstanceId":"902a4e6d-b06b-4565-b810-b731126d41d7"}
+2026-09-19T18:59:21.805685471Z [2026-09-19 20:59:21.804] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:59:21.805720985Z [2026-09-19 20:59:21.804] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:21.807457815Z [2026-09-19 20:59:21.807] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:59:31.846995698Z [2026-09-19 20:59:31.846] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:59:31.847048625Z [2026-09-19 20:59:31.846] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:31.854481591Z [2026-09-19 20:59:31.854] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:59:41.879152053Z [2026-09-19 20:59:41.878] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:59:41.879201706Z [2026-09-19 20:59:41.878] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:41.883125313Z [2026-09-19 20:59:41.882] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T18:59:51.902760449Z [2026-09-19 20:59:51.902] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T18:59:51.902782616Z [2026-09-19 20:59:51.902] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T18:59:51.904496312Z [2026-09-19 20:59:51.904] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:00:01.926091745Z [2026-09-19 21:00:01.925] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:00:01.926199493Z [2026-09-19 21:00:01.925] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:01.930333887Z [2026-09-19 21:00:01.930] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:00:11.965900669Z [2026-09-19 21:00:11.965] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:00:11.965966628Z [2026-09-19 21:00:11.965] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:11.970295793Z [2026-09-19 21:00:11.970] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:00:21.999035976Z [2026-09-19 21:00:21.998] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:00:21.999080765Z [2026-09-19 21:00:21.998] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:22.003524588Z [2026-09-19 21:00:22.003] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:00:32.043972027Z [2026-09-19 21:00:32.043] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:00:32.044047528Z [2026-09-19 21:00:32.043] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:32.047949624Z [2026-09-19 21:00:32.047] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:00:42.068053511Z [2026-09-19 21:00:42.067] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:00:42.068099059Z [2026-09-19 21:00:42.067] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:42.071951927Z [2026-09-19 21:00:42.071] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:00:52.092993306Z [2026-09-19 21:00:52.092] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:00:52.093071690Z [2026-09-19 21:00:52.092] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:00:52.097237582Z [2026-09-19 21:00:52.096] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:01:02.110915375Z [2026-09-19 21:01:02.110] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:01:02.110978915Z [2026-09-19 21:01:02.110] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:02.115681825Z [2026-09-19 21:01:02.115] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:01:12.140867343Z [2026-09-19 21:01:12.140] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:01:12.140903145Z [2026-09-19 21:01:12.140] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:12.142635413Z [2026-09-19 21:01:12.142] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:01:22.153051401Z [2026-09-19 21:01:22.152] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:01:22.153156104Z [2026-09-19 21:01:22.152] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:22.157125510Z [2026-09-19 21:01:22.156] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:01:32.170009262Z [2026-09-19 21:01:32.169] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:01:32.170081418Z [2026-09-19 21:01:32.169] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:32.173963930Z [2026-09-19 21:01:32.173] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:01:42.219013020Z [2026-09-19 21:01:42.218] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:01:42.219054516Z [2026-09-19 21:01:42.218] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:42.222820749Z [2026-09-19 21:01:42.222] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:01:52.242023867Z [2026-09-19 21:01:52.241] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:01:52.242088548Z [2026-09-19 21:01:52.241] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:01:52.245943958Z [2026-09-19 21:01:52.245] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:02:02.273946115Z [2026-09-19 21:02:02.273] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:02:02.277253880Z [2026-09-19 21:02:02.273] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:02.277691747Z [2026-09-19 21:02:02.277] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:02:12.308004534Z [2026-09-19 21:02:12.307] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:02:12.308091142Z [2026-09-19 21:02:12.307] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:12.312136496Z [2026-09-19 21:02:12.311] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:02:22.350729478Z [2026-09-19 21:02:22.350] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:02:22.350745093Z [2026-09-19 21:02:22.350] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:22.352411144Z [2026-09-19 21:02:22.352] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:02:32.367036254Z [2026-09-19 21:02:32.366] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:02:32.367130755Z [2026-09-19 21:02:32.366] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:32.370947711Z [2026-09-19 21:02:32.370] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:02:42.398160753Z [2026-09-19 21:02:42.397] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:02:42.398236569Z [2026-09-19 21:02:42.397] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:42.402348021Z [2026-09-19 21:02:42.402] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:02:52.440926449Z [2026-09-19 21:02:52.440] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:02:52.440989545Z [2026-09-19 21:02:52.440] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:02:52.443634451Z [2026-09-19 21:02:52.443] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:03:02.478985237Z [2026-09-19 21:03:02.478] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:03:02.479188691Z [2026-09-19 21:03:02.478] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:02.483481263Z [2026-09-19 21:03:02.483] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:03:12.517113459Z [2026-09-19 21:03:12.516] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:03:12.517329496Z [2026-09-19 21:03:12.516] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:12.521925470Z [2026-09-19 21:03:12.521] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:03:22.549006023Z [2026-09-19 21:03:22.548] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:03:22.549082051Z [2026-09-19 21:03:22.548] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:22.552937949Z [2026-09-19 21:03:22.552] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:03:32.578921225Z [2026-09-19 21:03:32.578] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:03:32.578964502Z [2026-09-19 21:03:32.578] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:32.583047962Z [2026-09-19 21:03:32.582] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:03:42.605800903Z [2026-09-19 21:03:42.605] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:03:42.605824868Z [2026-09-19 21:03:42.605] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:42.607517528Z [2026-09-19 21:03:42.607] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:03:52.622123237Z [2026-09-19 21:03:52.621] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:03:52.622229029Z [2026-09-19 21:03:52.621] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:03:52.626005921Z [2026-09-19 21:03:52.625] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:04:02.651202609Z [2026-09-19 21:04:02.650] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:04:02.651264058Z [2026-09-19 21:04:02.650] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:02.655570529Z [2026-09-19 21:04:02.655] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:04:12.703012293Z [2026-09-19 21:04:12.702] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:04:12.703087027Z [2026-09-19 21:04:12.702] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:12.708035689Z [2026-09-19 21:04:12.707] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:04:22.770832804Z [2026-09-19 21:04:22.770] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:04:22.770875950Z [2026-09-19 21:04:22.770] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:22.773252499Z [2026-09-19 21:04:22.773] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:04:32.825944460Z [2026-09-19 21:04:32.825] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:04:32.826025296Z [2026-09-19 21:04:32.825] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:32.830764648Z [2026-09-19 21:04:32.830] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:04:42.875963362Z [2026-09-19 21:04:42.875] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:04:42.876012501Z [2026-09-19 21:04:42.875] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:42.879905513Z [2026-09-19 21:04:42.879] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:04:52.930996863Z [2026-09-19 21:04:52.927] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:04:52.931028422Z [2026-09-19 21:04:52.927] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:04:52.933606118Z [2026-09-19 21:04:52.933] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:05:02.945900129Z [2026-09-19 21:05:02.944] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:05:02.945993705Z [2026-09-19 21:05:02.944] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:02.950950025Z [2026-09-19 21:05:02.950] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:05:12.971937980Z [2026-09-19 21:05:12.971] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:05:12.971996979Z [2026-09-19 21:05:12.971] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:12.975517291Z [2026-09-19 21:05:12.975] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:05:22.999145542Z [2026-09-19 21:05:22.998] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:05:22.999187709Z [2026-09-19 21:05:22.998] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:23.003012889Z [2026-09-19 21:05:23.002] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:05:33.073197807Z [2026-09-19 21:05:33.072] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:05:33.073257773Z [2026-09-19 21:05:33.072] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:33.077088676Z [2026-09-19 21:05:33.076] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:05:43.119120296Z [2026-09-19 21:05:43.118] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:05:43.119172423Z [2026-09-19 21:05:43.118] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:43.122801239Z [2026-09-19 21:05:43.122] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:05:53.167979933Z [2026-09-19 21:05:53.167] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:05:53.168064337Z [2026-09-19 21:05:53.167] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:05:53.171963709Z [2026-09-19 21:05:53.171] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:06:03.202021790Z [2026-09-19 21:06:03.201] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:06:03.202071812Z [2026-09-19 21:06:03.201] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:03.205707857Z [2026-09-19 21:06:03.205] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:06:13.269037963Z [2026-09-19 21:06:13.268] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:06:13.269103757Z [2026-09-19 21:06:13.268] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:13.272743912Z [2026-09-19 21:06:13.272] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:06:23.332992735Z [2026-09-19 21:06:23.332] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:06:23.333042151Z [2026-09-19 21:06:23.332] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:23.336680562Z [2026-09-19 21:06:23.336] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:06:33.364069323Z [2026-09-19 21:06:33.363] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:06:33.364126542Z [2026-09-19 21:06:33.363] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:33.367672657Z [2026-09-19 21:06:33.367] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:06:43.381021676Z [2026-09-19 21:06:43.380] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:06:43.381082243Z [2026-09-19 21:06:43.380] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:43.384906410Z [2026-09-19 21:06:43.384] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:06:53.420062028Z [2026-09-19 21:06:53.419] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:06:53.420129972Z [2026-09-19 21:06:53.419] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:06:53.424627714Z [2026-09-19 21:06:53.424] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:07:03.455999818Z [2026-09-19 21:07:03.455] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:07:03.456052427Z [2026-09-19 21:07:03.455] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:03.459497179Z [2026-09-19 21:07:03.459] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:07:13.479987123Z [2026-09-19 21:07:13.479] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:07:13.480038446Z [2026-09-19 21:07:13.479] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:13.483709189Z [2026-09-19 21:07:13.483] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:07:23.511819632Z [2026-09-19 21:07:23.511] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:07:23.511849779Z [2026-09-19 21:07:23.511] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:23.513713587Z [2026-09-19 21:07:23.513] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:07:33.550984991Z [2026-09-19 21:07:33.550] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:07:33.551062614Z [2026-09-19 21:07:33.550] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:33.555167125Z [2026-09-19 21:07:33.554] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:07:43.568011703Z [2026-09-19 21:07:43.567] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:07:43.568076366Z [2026-09-19 21:07:43.567] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:43.572163786Z [2026-09-19 21:07:43.571] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:07:53.585117091Z [2026-09-19 21:07:53.584] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:07:53.585193602Z [2026-09-19 21:07:53.584] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:07:53.588804414Z [2026-09-19 21:07:53.588] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:08:03.607034114Z [2026-09-19 21:08:03.606] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:08:03.607085335Z [2026-09-19 21:08:03.606] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:03.611315691Z [2026-09-19 21:08:03.611] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:08:13.634991171Z [2026-09-19 21:08:13.634] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:08:13.635062373Z [2026-09-19 21:08:13.634] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:13.639363758Z [2026-09-19 21:08:13.639] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:08:23.661096719Z [2026-09-19 21:08:23.660] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:08:23.661149349Z [2026-09-19 21:08:23.660] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:23.664781512Z [2026-09-19 21:08:23.664] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:08:33.702865737Z [2026-09-19 21:08:33.702] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:08:33.702901748Z [2026-09-19 21:08:33.702] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:33.704660155Z [2026-09-19 21:08:33.704] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:08:43.761092933Z [2026-09-19 21:08:43.760] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:08:43.761173904Z [2026-09-19 21:08:43.760] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:43.765669914Z [2026-09-19 21:08:43.765] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:08:53.877043108Z [2026-09-19 21:08:53.876] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:08:53.877120132Z [2026-09-19 21:08:53.876] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:08:53.881210021Z [2026-09-19 21:08:53.880] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:09:03.940044846Z [2026-09-19 21:09:03.939] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:09:03.940109195Z [2026-09-19 21:09:03.939] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:03.944173789Z [2026-09-19 21:09:03.943] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:09:13.983095617Z [2026-09-19 21:09:13.982] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:09:13.983180156Z [2026-09-19 21:09:13.982] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:13.987842248Z [2026-09-19 21:09:13.987] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:09:24.016088286Z [2026-09-19 21:09:24.015] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:09:24.016164519Z [2026-09-19 21:09:24.015] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:24.020679976Z [2026-09-19 21:09:24.020] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:09:34.043005455Z [2026-09-19 21:09:34.042] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:09:34.043066206Z [2026-09-19 21:09:34.042] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:34.046965355Z [2026-09-19 21:09:34.046] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:09:44.065037917Z [2026-09-19 21:09:44.064] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:09:44.065112187Z [2026-09-19 21:09:44.064] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:44.069314549Z [2026-09-19 21:09:44.069] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:09:54.094085202Z [2026-09-19 21:09:54.093] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:09:54.094149756Z [2026-09-19 21:09:54.093] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:09:54.097938628Z [2026-09-19 21:09:54.097] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:10:04.132084231Z [2026-09-19 21:10:04.131] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:10:04.132146488Z [2026-09-19 21:10:04.131] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:04.136072022Z [2026-09-19 21:10:04.135] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:10:14.161033189Z [2026-09-19 21:10:14.160] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:10:14.161102276Z [2026-09-19 21:10:14.160] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:14.165314256Z [2026-09-19 21:10:14.165] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:10:24.219893672Z [2026-09-19 21:10:24.219] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:10:24.219937211Z [2026-09-19 21:10:24.219] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:24.222703098Z [2026-09-19 21:10:24.222] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:10:34.252079728Z [2026-09-19 21:10:34.251] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:10:34.252152376Z [2026-09-19 21:10:34.251] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:34.256799079Z [2026-09-19 21:10:34.256] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:10:44.293023128Z [2026-09-19 21:10:44.292] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:10:44.293115833Z [2026-09-19 21:10:44.292] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:44.297805552Z [2026-09-19 21:10:44.297] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:10:54.324763118Z [2026-09-19 21:10:54.324] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:10:54.324785971Z [2026-09-19 21:10:54.324] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:10:54.326138592Z [2026-09-19 21:10:54.326] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:11:04.351033650Z [2026-09-19 21:11:04.350] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:11:04.351092014Z [2026-09-19 21:11:04.350] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:04.354633961Z [2026-09-19 21:11:04.354] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:11:14.370130896Z [2026-09-19 21:11:14.369] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:11:14.370227671Z [2026-09-19 21:11:14.369] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:14.374222734Z [2026-09-19 21:11:14.373] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:11:24.404029679Z [2026-09-19 21:11:24.403] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:11:24.404080651Z [2026-09-19 21:11:24.403] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:24.407858285Z [2026-09-19 21:11:24.407] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:11:34.424081806Z [2026-09-19 21:11:34.423] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:11:34.424141883Z [2026-09-19 21:11:34.423] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:34.427773373Z [2026-09-19 21:11:34.427] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:11:44.439999830Z [2026-09-19 21:11:44.439] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:11:44.440061692Z [2026-09-19 21:11:44.439] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:44.444101912Z [2026-09-19 21:11:44.443] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:11:54.452737014Z [2026-09-19 21:11:54.452] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:11:54.452916400Z [2026-09-19 21:11:54.452] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:11:54.454865790Z [2026-09-19 21:11:54.454] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:12:04.478162026Z [2026-09-19 21:12:04.477] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:12:04.478223730Z [2026-09-19 21:12:04.477] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:04.481857470Z [2026-09-19 21:12:04.481] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:12:14.525954464Z [2026-09-19 21:12:14.525] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:12:14.526018632Z [2026-09-19 21:12:14.525] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:14.529966776Z [2026-09-19 21:12:14.529] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:12:24.565081509Z [2026-09-19 21:12:24.564] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:12:24.565178586Z [2026-09-19 21:12:24.564] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:24.569092684Z [2026-09-19 21:12:24.568] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:12:34.600146284Z [2026-09-19 21:12:34.599] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:12:34.600216407Z [2026-09-19 21:12:34.599] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:34.603846163Z [2026-09-19 21:12:34.603] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:12:44.627069755Z [2026-09-19 21:12:44.626] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:12:44.627148659Z [2026-09-19 21:12:44.626] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:44.631208330Z [2026-09-19 21:12:44.630] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:12:54.660996166Z [2026-09-19 21:12:54.660] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:12:54.661066765Z [2026-09-19 21:12:54.660] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:12:54.664736503Z [2026-09-19 21:12:54.664] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:13:04.683071093Z [2026-09-19 21:13:04.682] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:13:04.683123490Z [2026-09-19 21:13:04.682] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:04.687194988Z [2026-09-19 21:13:04.686] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:13:14.720954977Z [2026-09-19 21:13:14.720] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:13:14.720989890Z [2026-09-19 21:13:14.720] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:14.723471579Z [2026-09-19 21:13:14.723] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:13:24.753941050Z [2026-09-19 21:13:24.753] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:13:24.753974767Z [2026-09-19 21:13:24.753] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:24.755394528Z [2026-09-19 21:13:24.755] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:13:34.772758612Z [2026-09-19 21:13:34.772] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:13:34.772775332Z [2026-09-19 21:13:34.772] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:34.773935530Z [2026-09-19 21:13:34.773] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:13:44.787894159Z [2026-09-19 21:13:44.787] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:13:44.787957018Z [2026-09-19 21:13:44.787] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:44.791791506Z [2026-09-19 21:13:44.791] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:13:54.803071328Z [2026-09-19 21:13:54.802] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:13:54.803163384Z [2026-09-19 21:13:54.802] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:13:54.808094050Z [2026-09-19 21:13:54.807] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:14:04.821822972Z [2026-09-19 21:14:04.821] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:14:04.821865636Z [2026-09-19 21:14:04.821] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:04.823343851Z [2026-09-19 21:14:04.823] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:14:14.876935334Z [2026-09-19 21:14:14.876] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:14:14.877000936Z [2026-09-19 21:14:14.876] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:14.879378578Z [2026-09-19 21:14:14.879] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:14:24.893984749Z [2026-09-19 21:14:24.893] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:14:24.894013541Z [2026-09-19 21:14:24.893] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:24.895239682Z [2026-09-19 21:14:24.895] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:14:34.905082404Z [2026-09-19 21:14:34.904] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:14:34.905162156Z [2026-09-19 21:14:34.904] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:34.910065310Z [2026-09-19 21:14:34.909] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:14:44.917015323Z [2026-09-19 21:14:44.916] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:14:44.917073954Z [2026-09-19 21:14:44.916] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:44.920759979Z [2026-09-19 21:14:44.920] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:14:54.940897917Z [2026-09-19 21:14:54.940] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:14:54.940921496Z [2026-09-19 21:14:54.940] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:14:54.942427335Z [2026-09-19 21:14:54.942] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:15:04.962717562Z [2026-09-19 21:15:04.961] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:15:04.962756587Z [2026-09-19 21:15:04.961] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:04.964835069Z [2026-09-19 21:15:04.964] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:15:14.974001602Z [2026-09-19 21:15:14.973] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:15:14.974059566Z [2026-09-19 21:15:14.973] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:14.979196559Z [2026-09-19 21:15:14.978] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:15:25.004125329Z [2026-09-19 21:15:25.003] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:15:25.004209045Z [2026-09-19 21:15:25.003] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:25.007802854Z [2026-09-19 21:15:25.007] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:15:35.013988358Z [2026-09-19 21:15:35.013] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:15:35.014048702Z [2026-09-19 21:15:35.013] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:35.019813918Z [2026-09-19 21:15:35.019] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:15:45.029045057Z [2026-09-19 21:15:45.028] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:15:45.029123172Z [2026-09-19 21:15:45.028] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:45.033297494Z [2026-09-19 21:15:45.033] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:15:55.044992719Z [2026-09-19 21:15:55.044] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:15:55.045064999Z [2026-09-19 21:15:55.044] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:15:55.049291679Z [2026-09-19 21:15:55.048] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:16:05.069899653Z [2026-09-19 21:16:05.069] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:16:05.069918382Z [2026-09-19 21:16:05.069] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:05.071477019Z [2026-09-19 21:16:05.071] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:16:15.083906723Z [2026-09-19 21:16:15.083] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:16:15.083973042Z [2026-09-19 21:16:15.083] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:15.087770577Z [2026-09-19 21:16:15.087] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:16:25.094124975Z [2026-09-19 21:16:25.093] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:16:25.094216470Z [2026-09-19 21:16:25.093] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:25.098479681Z [2026-09-19 21:16:25.098] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:16:35.131067711Z [2026-09-19 21:16:35.130] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:16:35.131122599Z [2026-09-19 21:16:35.130] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:35.134494595Z [2026-09-19 21:16:35.134] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:16:45.152081757Z [2026-09-19 21:16:45.151] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:16:45.152147849Z [2026-09-19 21:16:45.151] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:45.156269360Z [2026-09-19 21:16:45.155] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:16:55.161481940Z [2026-09-19 21:16:55.160] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:16:55.161568971Z [2026-09-19 21:16:55.160] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:16:55.164844528Z [2026-09-19 21:16:55.164] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:17:05.188657521Z [2026-09-19 21:17:05.187] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:17:05.188737735Z [2026-09-19 21:17:05.187] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:05.191830119Z [2026-09-19 21:17:05.191] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:17:15.210540566Z [2026-09-19 21:17:15.209] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:17:15.210650516Z [2026-09-19 21:17:15.209] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:15.214237214Z [2026-09-19 21:17:15.213] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:17:25.233056943Z [2026-09-19 21:17:25.232] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:17:25.233131717Z [2026-09-19 21:17:25.232] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:25.236840628Z [2026-09-19 21:17:25.236] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:17:35.275894729Z [2026-09-19 21:17:35.275] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:17:35.275932095Z [2026-09-19 21:17:35.275] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:35.277380015Z [2026-09-19 21:17:35.277] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:17:45.307972849Z [2026-09-19 21:17:45.307] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:17:45.308029957Z [2026-09-19 21:17:45.307] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:45.313655808Z [2026-09-19 21:17:45.313] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:17:55.370945162Z [2026-09-19 21:17:55.370] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:17:55.370978222Z [2026-09-19 21:17:55.370] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:17:55.372475220Z [2026-09-19 21:17:55.372] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:18:05.386780671Z [2026-09-19 21:18:05.386] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:18:05.386808177Z [2026-09-19 21:18:05.386] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:05.388131513Z [2026-09-19 21:18:05.388] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:18:15.397000471Z [2026-09-19 21:18:15.396] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:18:15.397036351Z [2026-09-19 21:18:15.396] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:15.399198554Z [2026-09-19 21:18:15.399] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:18:25.405086415Z [2026-09-19 21:18:25.404] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:18:25.405171480Z [2026-09-19 21:18:25.404] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:25.408932741Z [2026-09-19 21:18:25.408] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:18:35.425038897Z [2026-09-19 21:18:35.424] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:18:35.425107494Z [2026-09-19 21:18:35.424] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:35.428782567Z [2026-09-19 21:18:35.428] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:18:45.440027325Z [2026-09-19 21:18:45.439] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:18:45.440106641Z [2026-09-19 21:18:45.439] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:45.443995287Z [2026-09-19 21:18:45.443] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:18:55.525083268Z [2026-09-19 21:18:55.523] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:18:55.525246996Z [2026-09-19 21:18:55.523] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:18:55.529818218Z [2026-09-19 21:18:55.529] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:19:05.559092541Z [2026-09-19 21:19:05.558] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:19:05.559166849Z [2026-09-19 21:19:05.558] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:05.563144273Z [2026-09-19 21:19:05.562] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:19:15.600937800Z [2026-09-19 21:19:15.600] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:19:15.601016718Z [2026-09-19 21:19:15.600] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:15.605148329Z [2026-09-19 21:19:15.604] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:19:25.677881343Z [2026-09-19 21:19:25.677] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:19:25.677930825Z [2026-09-19 21:19:25.677] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:25.682233369Z [2026-09-19 21:19:25.682] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:19:35.707013574Z [2026-09-19 21:19:35.706] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:19:35.707073215Z [2026-09-19 21:19:35.706] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:35.711388557Z [2026-09-19 21:19:35.711] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:19:45.731050337Z [2026-09-19 21:19:45.730] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:19:45.731098903Z [2026-09-19 21:19:45.730] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:45.734555856Z [2026-09-19 21:19:45.734] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:19:55.760943589Z [2026-09-19 21:19:55.760] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:19:55.761010646Z [2026-09-19 21:19:55.760] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:19:55.765347375Z [2026-09-19 21:19:55.765] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:20:05.784061168Z [2026-09-19 21:20:05.783] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:20:05.784140764Z [2026-09-19 21:20:05.783] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:05.788092757Z [2026-09-19 21:20:05.787] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:20:15.815066435Z [2026-09-19 21:20:15.814] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:20:15.815132633Z [2026-09-19 21:20:15.814] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:15.818946456Z [2026-09-19 21:20:15.818] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:20:25.840116904Z [2026-09-19 21:20:25.839] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:20:25.840182687Z [2026-09-19 21:20:25.839] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:25.844020658Z [2026-09-19 21:20:25.843] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:20:35.875026552Z [2026-09-19 21:20:35.874] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:20:35.875106389Z [2026-09-19 21:20:35.874] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:35.879085785Z [2026-09-19 21:20:35.878] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:20:45.906084721Z [2026-09-19 21:20:45.905] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:20:45.906165767Z [2026-09-19 21:20:45.905] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:45.910082108Z [2026-09-19 21:20:45.909] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:20:55.949013740Z [2026-09-19 21:20:55.948] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:20:55.949047928Z [2026-09-19 21:20:55.948] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:20:55.951266543Z [2026-09-19 21:20:55.951] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:21:05.977049206Z [2026-09-19 21:21:05.975] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:21:05.977097071Z [2026-09-19 21:21:05.975] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:05.991378472Z [2026-09-19 21:21:05.991] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:21:16.008009696Z [2026-09-19 21:21:16.007] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:21:16.008100287Z [2026-09-19 21:21:16.007] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:16.012064076Z [2026-09-19 21:21:16.011] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:21:26.034565593Z [2026-09-19 21:21:26.033] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:21:26.034731971Z [2026-09-19 21:21:26.033] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:26.037920275Z [2026-09-19 21:21:26.037] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:21:36.067179980Z [2026-09-19 21:21:36.066] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:21:36.067264842Z [2026-09-19 21:21:36.066] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:36.071205389Z [2026-09-19 21:21:36.070] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:21:46.079117354Z [2026-09-19 21:21:46.078] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:21:46.079206804Z [2026-09-19 21:21:46.078] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:46.083034955Z [2026-09-19 21:21:46.082] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:21:56.102139962Z [2026-09-19 21:21:56.101] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:21:56.102236261Z [2026-09-19 21:21:56.101] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:21:56.105943150Z [2026-09-19 21:21:56.105] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:22:06.125056654Z [2026-09-19 21:22:06.124] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:22:06.125160336Z [2026-09-19 21:22:06.124] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:06.129277778Z [2026-09-19 21:22:06.129] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:22:16.141152148Z [2026-09-19 21:22:16.140] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:22:16.141214168Z [2026-09-19 21:22:16.140] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:16.145011217Z [2026-09-19 21:22:16.144] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:22:26.156019462Z [2026-09-19 21:22:26.155] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:22:26.156083052Z [2026-09-19 21:22:26.155] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:26.160281635Z [2026-09-19 21:22:26.160] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:22:36.228037081Z [2026-09-19 21:22:36.227] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:22:36.228120847Z [2026-09-19 21:22:36.227] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:36.231456691Z [2026-09-19 21:22:36.231] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:22:46.252034661Z [2026-09-19 21:22:46.251] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:22:46.252099727Z [2026-09-19 21:22:46.251] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:46.255944430Z [2026-09-19 21:22:46.255] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:22:56.264145506Z [2026-09-19 21:22:56.263] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:22:56.264209120Z [2026-09-19 21:22:56.263] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:22:56.268512246Z [2026-09-19 21:22:56.268] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:23:06.302206878Z [2026-09-19 21:23:06.301] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:23:06.302292167Z [2026-09-19 21:23:06.301] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:06.305964330Z [2026-09-19 21:23:06.305] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:23:16.317145841Z [2026-09-19 21:23:16.316] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:23:16.317231557Z [2026-09-19 21:23:16.316] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:16.321162701Z [2026-09-19 21:23:16.320] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:23:26.348813610Z [2026-09-19 21:23:26.348] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:23:26.348837892Z [2026-09-19 21:23:26.348] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:26.350022734Z [2026-09-19 21:23:26.349] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:23:36.376115795Z [2026-09-19 21:23:36.375] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:23:36.376182801Z [2026-09-19 21:23:36.375] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:36.379893232Z [2026-09-19 21:23:36.379] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:23:46.393101848Z [2026-09-19 21:23:46.392] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:23:46.393180939Z [2026-09-19 21:23:46.392] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:46.397342945Z [2026-09-19 21:23:46.397] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:23:56.428085589Z [2026-09-19 21:23:56.427] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:23:56.428158836Z [2026-09-19 21:23:56.427] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:23:56.431852948Z [2026-09-19 21:23:56.431] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:24:06.448035032Z [2026-09-19 21:24:06.447] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:24:06.448128510Z [2026-09-19 21:24:06.447] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:06.451957378Z [2026-09-19 21:24:06.451] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:24:16.463044414Z [2026-09-19 21:24:16.462] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:24:16.463111322Z [2026-09-19 21:24:16.462] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:16.466832594Z [2026-09-19 21:24:16.466] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:24:26.493035890Z [2026-09-19 21:24:26.492] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:24:26.493101614Z [2026-09-19 21:24:26.492] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:26.496888000Z [2026-09-19 21:24:26.496] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:24:36.515146760Z [2026-09-19 21:24:36.514] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:24:36.515226296Z [2026-09-19 21:24:36.514] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:36.519064056Z [2026-09-19 21:24:36.518] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:24:46.532054387Z [2026-09-19 21:24:46.531] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:24:46.532137518Z [2026-09-19 21:24:46.531] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:46.536181676Z [2026-09-19 21:24:46.535] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:24:56.552038146Z [2026-09-19 21:24:56.551] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:24:56.552108304Z [2026-09-19 21:24:56.551] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:24:56.555834078Z [2026-09-19 21:24:56.555] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:25:06.581895787Z [2026-09-19 21:25:06.581] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:25:06.581928050Z [2026-09-19 21:25:06.581] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:06.582985459Z [2026-09-19 21:25:06.582] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:25:16.600011831Z [2026-09-19 21:25:16.599] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:25:16.600083734Z [2026-09-19 21:25:16.599] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:16.604419394Z [2026-09-19 21:25:16.604] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:25:26.636013706Z [2026-09-19 21:25:26.635] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:25:26.636100218Z [2026-09-19 21:25:26.635] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:26.640255877Z [2026-09-19 21:25:26.639] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:25:36.663998366Z [2026-09-19 21:25:36.663] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:25:36.664066709Z [2026-09-19 21:25:36.663] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:36.667708910Z [2026-09-19 21:25:36.667] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:25:46.697003833Z [2026-09-19 21:25:46.696] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:25:46.697081846Z [2026-09-19 21:25:46.696] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:46.701369301Z [2026-09-19 21:25:46.701] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:25:56.714053292Z [2026-09-19 21:25:56.713] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:25:56.714121668Z [2026-09-19 21:25:56.713] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:25:56.717780980Z [2026-09-19 21:25:56.717] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:26:06.739083264Z [2026-09-19 21:26:06.738] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:26:06.739173150Z [2026-09-19 21:26:06.738] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:06.742957479Z [2026-09-19 21:26:06.742] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:26:16.781010266Z [2026-09-19 21:26:16.780] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:26:16.781077340Z [2026-09-19 21:26:16.780] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:16.785016490Z [2026-09-19 21:26:16.784] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:26:26.808919284Z [2026-09-19 21:26:26.808] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:26:26.808988996Z [2026-09-19 21:26:26.808] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:26.812773754Z [2026-09-19 21:26:26.812] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:26:36.835111279Z [2026-09-19 21:26:36.834] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:26:36.835180626Z [2026-09-19 21:26:36.834] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:36.838880816Z [2026-09-19 21:26:36.838] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:26:46.856094628Z [2026-09-19 21:26:46.855] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:26:46.856165105Z [2026-09-19 21:26:46.855] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:46.860542870Z [2026-09-19 21:26:46.860] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:26:56.877029975Z [2026-09-19 21:26:56.876] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:26:56.877074017Z [2026-09-19 21:26:56.876] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:26:56.880949994Z [2026-09-19 21:26:56.880] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:27:06.922006552Z [2026-09-19 21:27:06.921] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:27:06.922054833Z [2026-09-19 21:27:06.921] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:06.925731294Z [2026-09-19 21:27:06.925] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:27:16.933091600Z [2026-09-19 21:27:16.932] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:27:16.933177416Z [2026-09-19 21:27:16.932] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:16.937043353Z [2026-09-19 21:27:16.936] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:27:26.948986376Z [2026-09-19 21:27:26.948] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:27:26.949075036Z [2026-09-19 21:27:26.948] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:26.952969317Z [2026-09-19 21:27:26.952] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:27:36.970958379Z [2026-09-19 21:27:36.970] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:27:36.971016079Z [2026-09-19 21:27:36.970] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:36.974880956Z [2026-09-19 21:27:36.974] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:27:47.000997214Z [2026-09-19 21:27:47.000] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:27:47.001055381Z [2026-09-19 21:27:47.000] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:47.005245391Z [2026-09-19 21:27:47.005] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:27:57.033151463Z [2026-09-19 21:27:57.032] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:27:57.033207329Z [2026-09-19 21:27:57.032] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:27:57.036779278Z [2026-09-19 21:27:57.036] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:28:07.058067462Z [2026-09-19 21:28:07.057] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:28:07.058142387Z [2026-09-19 21:28:07.057] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:07.061863547Z [2026-09-19 21:28:07.061] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:28:17.077022323Z [2026-09-19 21:28:17.076] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:28:17.077079993Z [2026-09-19 21:28:17.076] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:17.080799091Z [2026-09-19 21:28:17.080] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:28:27.095126264Z [2026-09-19 21:28:27.094] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:28:27.095185366Z [2026-09-19 21:28:27.094] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:27.098958625Z [2026-09-19 21:28:27.098] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:28:37.118824651Z [2026-09-19 21:28:37.118] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:28:37.118883947Z [2026-09-19 21:28:37.118] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:37.121316435Z [2026-09-19 21:28:37.121] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:28:47.147017787Z [2026-09-19 21:28:47.146] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:28:47.147085519Z [2026-09-19 21:28:47.146] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:47.151371531Z [2026-09-19 21:28:47.151] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:28:57.176025762Z [2026-09-19 21:28:57.175] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:28:57.176121037Z [2026-09-19 21:28:57.175] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:28:57.180038282Z [2026-09-19 21:28:57.179] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:29:07.195049799Z [2026-09-19 21:29:07.194] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:29:07.195106539Z [2026-09-19 21:29:07.194] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:07.199473408Z [2026-09-19 21:29:07.199] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:29:17.227082596Z [2026-09-19 21:29:17.226] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:29:17.227159548Z [2026-09-19 21:29:17.226] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:17.230398845Z [2026-09-19 21:29:17.230] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:29:27.261066187Z [2026-09-19 21:29:27.260] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:29:27.261142513Z [2026-09-19 21:29:27.260] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:27.264929187Z [2026-09-19 21:29:27.264] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:29:37.285058904Z [2026-09-19 21:29:37.284] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:29:37.285117355Z [2026-09-19 21:29:37.284] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:37.288980554Z [2026-09-19 21:29:37.288] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:29:47.309008842Z [2026-09-19 21:29:47.308] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:29:47.309070176Z [2026-09-19 21:29:47.308] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:47.312858448Z [2026-09-19 21:29:47.312] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:29:57.330875031Z [2026-09-19 21:29:57.330] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:29:57.330949823Z [2026-09-19 21:29:57.330] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:29:57.333074395Z [2026-09-19 21:29:57.332] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:30:07.357100827Z [2026-09-19 21:30:07.356] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:30:07.357174715Z [2026-09-19 21:30:07.356] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:07.361082417Z [2026-09-19 21:30:07.360] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:30:17.376923423Z [2026-09-19 21:30:17.376] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:30:17.376981740Z [2026-09-19 21:30:17.376] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:17.379233702Z [2026-09-19 21:30:17.379] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:30:18.518428476Z [2026-09-19 21:30:18.518] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-uecm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:30:18.518456970Z [2026-09-19 21:30:18.518] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:18.527244001Z [2026-09-19 21:30:18.527] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:30:18.527497074Z [2026-09-19 21:30:18.527] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"8","validityPeriod":100000}
+2026-09-19T19:30:18.532631545Z [2026-09-19 21:30:18.532] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-uecm/v1/imsi-262100000000031/registrations/smf-registrations/1, method=DELETE
+2026-09-19T19:30:18.532862311Z [2026-09-19 21:30:18.532] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:18.546511902Z [2026-09-19 21:30:18.546] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:30:18.549896748Z [2026-09-19 21:30:18.549] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:30:18.549955756Z [2026-09-19 21:30:18.549] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:18.554438811Z [2026-09-19 21:30:18.554] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:30:18.554493857Z [2026-09-19 21:30:18.554] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"9","validityPeriod":100000}
+2026-09-19T19:30:18.556347883Z [2026-09-19 21:30:18.556] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sdm-subscriptions/1, method=DELETE
+2026-09-19T19:30:18.556364123Z [2026-09-19 21:30:18.556] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:18.562780652Z [2026-09-19 21:30:18.562] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:30:27.413148910Z [2026-09-19 21:30:27.412] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:30:27.413212536Z [2026-09-19 21:30:27.412] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:27.417103668Z [2026-09-19 21:30:27.416] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:30:37.428945694Z [2026-09-19 21:30:37.428] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:30:37.428967447Z [2026-09-19 21:30:37.428] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:37.430103685Z [2026-09-19 21:30:37.430] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:30:47.439009681Z [2026-09-19 21:30:47.438] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:30:47.439087827Z [2026-09-19 21:30:47.438] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:47.443287120Z [2026-09-19 21:30:47.443] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:30:57.469018612Z [2026-09-19 21:30:57.468] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:30:57.469130447Z [2026-09-19 21:30:57.468] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:30:57.472507214Z [2026-09-19 21:30:57.472] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:31:07.486016054Z [2026-09-19 21:31:07.485] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:31:07.486098744Z [2026-09-19 21:31:07.485] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:07.489966650Z [2026-09-19 21:31:07.489] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:31:15.369770398Z [2026-09-19 21:31:15.369] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=AUSF&requester-nf-type=AMF&service-names=nausf-auth&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T19:31:15.369944124Z [2026-09-19 21:31:15.369] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.379195238Z [2026-09-19 21:31:15.379] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.379356812Z [2026-09-19 21:31:15.379] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"ausfInfo":{"groupId":"oai-ausf-testgroupid","routingIndicators":["0210","9876"],"supiRanges":[{"end":"","pattern":"209238210938","start":"q0930j0c80283ncjf"}]},"capacity":100,"fqdn":"ausf.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.133"],"json_data":null,"nfInstanceId":"04369ad6-a863-4b50-929c-c7ae514b5281","nfInstanceName":"OAI-AUSF","nfServices":[],"nfStatus":"REGISTERED","nfType":"AUSF","priority":1}],"searchId":"10","validityPeriod":100000}
+2026-09-19T19:31:15.384486356Z [2026-09-19 21:31:15.384] [sepp_app] [info] Forwarding NF service request: authority=ausf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nausf-auth/v1/ue-authentications, method=POST
+2026-09-19T19:31:15.384913929Z [2026-09-19 21:31:15.384] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.420022102Z [2026-09-19 21:31:15.419] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.420078126Z [2026-09-19 21:31:15.419] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"5gAuthData":{"autn":"5aef16e16c5f8000c640900bf0da449e","hxresStar":"3e72cb6a99bdd7d61186d8b2b521f5d2","rand":"aba34bb151833168465686d179978f21"},"_links":{"5g-aka":{"href":"http://192.168.73.133:8080/nausf-auth/v1/ue-authentications/5aef16e16c5f8000c640900bf0da449e/5g-aka-confirmation"}},"authType":"5G_AKA"}
+2026-09-19T19:31:15.429318549Z [2026-09-19 21:31:15.429] [sepp_app] [info] Forwarding NF service request: authority=ausf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nausf-auth/v1/ue-authentications/5aef16e16c5f8000c640900bf0da449e/5g-aka-confirmation, method=PUT
+2026-09-19T19:31:15.429533040Z [2026-09-19 21:31:15.429] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.457369531Z [2026-09-19 21:31:15.457] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.457418486Z [2026-09-19 21:31:15.457] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"authResult":"AUTHENTICATION_SUCCESS","kseaf":"1ec5c893926102e75d8123c99070cda0e77b8dd7dd153b161b7f72376bff68df","supi":"imsi-262100000000031"}
+2026-09-19T19:31:15.472277153Z [2026-09-19 21:31:15.472] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=AMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T19:31:15.472473733Z [2026-09-19 21:31:15.472] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.481942357Z [2026-09-19 21:31:15.481] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.482150959Z [2026-09-19 21:31:15.481] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"11","validityPeriod":100000}
+2026-09-19T19:31:15.488157173Z [2026-09-19 21:31:15.487] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/nssai?plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T19:31:15.488260422Z [2026-09-19 21:31:15.488] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.503774352Z [2026-09-19 21:31:15.503] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.503872317Z [2026-09-19 21:31:15.503] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"defaultSingleNssais":[{"sd":"000001","sst":1},{"sd":"00007b","sst":222}]}
+2026-09-19T19:31:15.721952881Z [2026-09-19 21:31:15.721] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=AMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T19:31:15.722014017Z [2026-09-19 21:31:15.721] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.731873438Z [2026-09-19 21:31:15.731] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.731936034Z [2026-09-19 21:31:15.731] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"12","validityPeriod":100000}
+2026-09-19T19:31:15.736644912Z [2026-09-19 21:31:15.736] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/smf-select-data?plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T19:31:15.736754289Z [2026-09-19 21:31:15.736] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.749439561Z [2026-09-19 21:31:15.749] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.749550665Z [2026-09-19 21:31:15.749] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"subscribedSnssaiInfos":{"222-00007B":{"dnnInfos":[{"defaultDnnIndicator":true,"dnn":"oai","lboRoamingAllowed":true}]}}}
+2026-09-19T19:31:15.770247680Z [2026-09-19 21:31:15.769] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:31:15.770440418Z [2026-09-19 21:31:15.770] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.781487952Z [2026-09-19 21:31:15.781] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.782271036Z [2026-09-19 21:31:15.781] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"13","validityPeriod":100000}
+2026-09-19T19:31:15.787429116Z [2026-09-19 21:31:15.787] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sm-data?single-nssai={"sst":222,"sd":"00007b"}&dnn=oai&plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T19:31:15.787680437Z [2026-09-19 21:31:15.787] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.805473055Z [2026-09-19 21:31:15.805] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.805515424Z [2026-09-19 21:31:15.805] [sepp_app] [debug] PRINS: Decrypted JOSE response: [{"dnnConfigurations":{"oai":{"5gQosProfile":{"5qi":6,"arp":{"preemptCap":"NOT_PREEMPT","preemptVuln":"NOT_PREEMPTABLE","priorityLevel":1},"priorityLevel":1},"pduSessionTypes":{"defaultSessionType":"IPV4"},"sessionAmbr":{"downlink":"100Mbps","uplink":"100Mbps"},"sscModes":{"defaultSscMode":"SSC_MODE_1"}}},"singleNssai":{"sd":"00007b","sst":222}}]
+2026-09-19T19:31:15.817130104Z [2026-09-19 21:31:15.816] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:31:15.817409305Z [2026-09-19 21:31:15.817] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.828377517Z [2026-09-19 21:31:15.828] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.828654964Z [2026-09-19 21:31:15.828] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"14","validityPeriod":100000}
+2026-09-19T19:31:15.833698091Z [2026-09-19 21:31:15.833] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sdm-subscriptions, method=POST
+2026-09-19T19:31:15.833758532Z [2026-09-19 21:31:15.833] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.856902377Z [2026-09-19 21:31:15.856] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.857091937Z [2026-09-19 21:31:15.856] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"callbackReference":"192.168.71.138:8080/nsmf-callback/v1imsi-262100000000031/sdm-notification","dnn":"oai","monitoredResourceUris":["http://udm.5gc.mnc10.mcc262.3gppnetwork.org:8080/nudm-sdm/v1/imsi-262100000000031/sm-data"],"nfInstanceId":"902a4e6d-b06b-4565-b810-b731126d41d7","plmnId":{"mcc":"208","mnc":"14"},"singleNssai":{"sd":"00007b","sst":222},"subscriptionId":"1"}
+2026-09-19T19:31:15.887064588Z [2026-09-19 21:31:15.886] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-uecm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:31:15.887224436Z [2026-09-19 21:31:15.886] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.898147183Z [2026-09-19 21:31:15.897] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.898402519Z [2026-09-19 21:31:15.898] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"15","validityPeriod":100000}
+2026-09-19T19:31:15.903240367Z [2026-09-19 21:31:15.902] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-uecm/v1/imsi-262100000000031/registrations/smf-registrations/1, method=PUT
+2026-09-19T19:31:15.903454353Z [2026-09-19 21:31:15.903] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:15.921019109Z [2026-09-19 21:31:15.920] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:31:15.921072183Z [2026-09-19 21:31:15.920] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"dnn":"oai","pduSessionId":1,"plmnId":{"mcc":"208","mnc":"14"},"singleNssai":{"sd":"00007b","sst":222},"smfInstanceId":"902a4e6d-b06b-4565-b810-b731126d41d7"}
+2026-09-19T19:31:17.501686359Z [2026-09-19 21:31:17.501] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:31:17.501711007Z [2026-09-19 21:31:17.501] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:17.502885529Z [2026-09-19 21:31:17.502] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:31:27.540770427Z [2026-09-19 21:31:27.540] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:31:27.540803846Z [2026-09-19 21:31:27.540] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:27.542424919Z [2026-09-19 21:31:27.542] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:31:37.559005248Z [2026-09-19 21:31:37.558] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:31:37.559070049Z [2026-09-19 21:31:37.558] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:37.563116950Z [2026-09-19 21:31:37.562] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:31:47.578044277Z [2026-09-19 21:31:47.577] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:31:47.578116308Z [2026-09-19 21:31:47.577] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:47.581882931Z [2026-09-19 21:31:47.581] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:31:57.598070231Z [2026-09-19 21:31:57.597] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:31:57.598091495Z [2026-09-19 21:31:57.597] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:31:57.599210722Z [2026-09-19 21:31:57.599] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:32:07.607850253Z [2026-09-19 21:32:07.606] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:32:07.607930588Z [2026-09-19 21:32:07.606] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:07.615055178Z [2026-09-19 21:32:07.614] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:32:17.628037528Z [2026-09-19 21:32:17.627] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:32:17.628074973Z [2026-09-19 21:32:17.627] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:17.630198967Z [2026-09-19 21:32:17.630] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:32:27.645072725Z [2026-09-19 21:32:27.644] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:32:27.645104303Z [2026-09-19 21:32:27.644] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:27.648558727Z [2026-09-19 21:32:27.648] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:32:37.672091806Z [2026-09-19 21:32:37.671] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:32:37.672152801Z [2026-09-19 21:32:37.671] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:37.675945962Z [2026-09-19 21:32:37.675] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:32:47.686135973Z [2026-09-19 21:32:47.685] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:32:47.686194153Z [2026-09-19 21:32:47.685] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:47.689820417Z [2026-09-19 21:32:47.689] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:32:57.726761207Z [2026-09-19 21:32:57.726] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:32:57.726780658Z [2026-09-19 21:32:57.726] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:32:57.727922406Z [2026-09-19 21:32:57.727] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:33:07.742183698Z [2026-09-19 21:33:07.741] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:33:07.742260266Z [2026-09-19 21:33:07.741] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:07.746274421Z [2026-09-19 21:33:07.745] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:33:17.758060998Z [2026-09-19 21:33:17.757] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:33:17.758141689Z [2026-09-19 21:33:17.757] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:17.762110988Z [2026-09-19 21:33:17.761] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:33:27.773008932Z [2026-09-19 21:33:27.772] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:33:27.773089504Z [2026-09-19 21:33:27.772] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:27.777984790Z [2026-09-19 21:33:27.777] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:33:37.787061024Z [2026-09-19 21:33:37.786] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:33:37.787105566Z [2026-09-19 21:33:37.786] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:37.788184024Z [2026-09-19 21:33:37.788] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:33:47.797982061Z [2026-09-19 21:33:47.797] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:33:47.798046733Z [2026-09-19 21:33:47.797] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:47.802931673Z [2026-09-19 21:33:47.802] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:33:57.813028532Z [2026-09-19 21:33:57.812] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:33:57.813090305Z [2026-09-19 21:33:57.812] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:33:57.817181525Z [2026-09-19 21:33:57.816] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:34:07.843050567Z [2026-09-19 21:34:07.842] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:34:07.843114408Z [2026-09-19 21:34:07.842] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:07.846800547Z [2026-09-19 21:34:07.846] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:34:17.866069274Z [2026-09-19 21:34:17.865] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:34:17.866142498Z [2026-09-19 21:34:17.865] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:17.869922158Z [2026-09-19 21:34:17.869] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:34:27.899124605Z [2026-09-19 21:34:27.898] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:34:27.899185122Z [2026-09-19 21:34:27.898] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:27.903348896Z [2026-09-19 21:34:27.903] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:34:37.920041041Z [2026-09-19 21:34:37.919] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:34:37.920101642Z [2026-09-19 21:34:37.919] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:37.923872474Z [2026-09-19 21:34:37.923] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:34:47.945067764Z [2026-09-19 21:34:47.944] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:34:47.945120632Z [2026-09-19 21:34:47.944] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:47.948907352Z [2026-09-19 21:34:47.948] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:34:57.973737936Z [2026-09-19 21:34:57.973] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:34:57.973787547Z [2026-09-19 21:34:57.973] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:34:57.974910319Z [2026-09-19 21:34:57.974] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:35:08.027995800Z [2026-09-19 21:35:08.027] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:35:08.028018445Z [2026-09-19 21:35:08.027] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:08.029267268Z [2026-09-19 21:35:08.029] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:35:18.047080308Z [2026-09-19 21:35:18.046] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:35:18.047159772Z [2026-09-19 21:35:18.046] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:18.051127415Z [2026-09-19 21:35:18.050] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:35:28.062115123Z [2026-09-19 21:35:28.061] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:35:28.062186903Z [2026-09-19 21:35:28.061] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:28.066722200Z [2026-09-19 21:35:28.066] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:35:38.084831948Z [2026-09-19 21:35:38.084] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:35:38.084853438Z [2026-09-19 21:35:38.084] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:38.086072726Z [2026-09-19 21:35:38.085] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:35:48.106798212Z [2026-09-19 21:35:48.106] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:35:48.106831082Z [2026-09-19 21:35:48.106] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:48.108192072Z [2026-09-19 21:35:48.108] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:35:58.139970144Z [2026-09-19 21:35:58.139] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:35:58.140037307Z [2026-09-19 21:35:58.139] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:35:58.143324740Z [2026-09-19 21:35:58.143] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:36:08.167913247Z [2026-09-19 21:36:08.167] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:36:08.167965228Z [2026-09-19 21:36:08.167] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:08.170726542Z [2026-09-19 21:36:08.170] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:36:18.197075459Z [2026-09-19 21:36:18.196] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:36:18.197132136Z [2026-09-19 21:36:18.196] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:18.200810531Z [2026-09-19 21:36:18.200] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:36:28.220082246Z [2026-09-19 21:36:28.219] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:36:28.220175071Z [2026-09-19 21:36:28.219] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:28.223813595Z [2026-09-19 21:36:28.223] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:36:38.237744212Z [2026-09-19 21:36:38.237] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:36:38.237772254Z [2026-09-19 21:36:38.237] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:38.239184406Z [2026-09-19 21:36:38.239] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:36:48.263085985Z [2026-09-19 21:36:48.262] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:36:48.263156312Z [2026-09-19 21:36:48.262] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:48.267126587Z [2026-09-19 21:36:48.266] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:36:58.281891951Z [2026-09-19 21:36:58.281] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:36:58.281938970Z [2026-09-19 21:36:58.281] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:36:58.285618311Z [2026-09-19 21:36:58.285] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:37:08.313028671Z [2026-09-19 21:37:08.312] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:37:08.313113831Z [2026-09-19 21:37:08.312] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:08.317373454Z [2026-09-19 21:37:08.317] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:37:18.331011746Z [2026-09-19 21:37:18.330] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:37:18.331073955Z [2026-09-19 21:37:18.330] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:18.335149648Z [2026-09-19 21:37:18.334] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:37:28.353168383Z [2026-09-19 21:37:28.353] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:37:28.353179670Z [2026-09-19 21:37:28.353] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:28.354141438Z [2026-09-19 21:37:28.354] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:37:38.385070997Z [2026-09-19 21:37:38.384] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:37:38.385128853Z [2026-09-19 21:37:38.384] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:38.388845639Z [2026-09-19 21:37:38.388] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:37:48.426087076Z [2026-09-19 21:37:48.425] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:37:48.426188564Z [2026-09-19 21:37:48.425] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:48.430922794Z [2026-09-19 21:37:48.430] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:37:58.450000711Z [2026-09-19 21:37:58.449] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:37:58.450068618Z [2026-09-19 21:37:58.449] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:37:58.454883542Z [2026-09-19 21:37:58.454] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:38:08.479083887Z [2026-09-19 21:38:08.478] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:38:08.479189612Z [2026-09-19 21:38:08.478] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:08.482973613Z [2026-09-19 21:38:08.482] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:38:18.501800029Z [2026-09-19 21:38:18.501] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:38:18.501829790Z [2026-09-19 21:38:18.501] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:18.502939440Z [2026-09-19 21:38:18.502] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:38:28.531123707Z [2026-09-19 21:38:28.530] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:38:28.531296549Z [2026-09-19 21:38:28.530] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:28.535190752Z [2026-09-19 21:38:28.534] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:38:38.568048278Z [2026-09-19 21:38:38.567] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:38:38.568116235Z [2026-09-19 21:38:38.567] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:38.571910639Z [2026-09-19 21:38:38.571] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:38:48.595118772Z [2026-09-19 21:38:48.594] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:38:48.595180570Z [2026-09-19 21:38:48.594] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:48.599063827Z [2026-09-19 21:38:48.598] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:38:58.633155124Z [2026-09-19 21:38:58.632] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:38:58.633224390Z [2026-09-19 21:38:58.632] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:38:58.637722521Z [2026-09-19 21:38:58.637] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:39:08.667075691Z [2026-09-19 21:39:08.666] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:39:08.667152962Z [2026-09-19 21:39:08.666] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:08.670697498Z [2026-09-19 21:39:08.670] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:39:18.687011236Z [2026-09-19 21:39:18.686] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:39:18.687095548Z [2026-09-19 21:39:18.686] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:18.691793449Z [2026-09-19 21:39:18.691] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:39:28.721088089Z [2026-09-19 21:39:28.720] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:39:28.721151460Z [2026-09-19 21:39:28.720] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:28.725225539Z [2026-09-19 21:39:28.724] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:39:38.756115828Z [2026-09-19 21:39:38.755] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:39:38.756194510Z [2026-09-19 21:39:38.755] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:38.759994033Z [2026-09-19 21:39:38.759] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:39:48.775034376Z [2026-09-19 21:39:48.774] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:39:48.775111245Z [2026-09-19 21:39:48.774] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:48.778891699Z [2026-09-19 21:39:48.778] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:39:58.808091391Z [2026-09-19 21:39:58.807] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:39:58.808189714Z [2026-09-19 21:39:58.807] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:39:58.811892158Z [2026-09-19 21:39:58.811] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:40:08.838052859Z [2026-09-19 21:40:08.837] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:40:08.838114716Z [2026-09-19 21:40:08.837] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:08.842028542Z [2026-09-19 21:40:08.841] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:40:18.867049520Z [2026-09-19 21:40:18.866] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:40:18.867119433Z [2026-09-19 21:40:18.866] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:18.870859775Z [2026-09-19 21:40:18.870] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:40:28.888155231Z [2026-09-19 21:40:28.887] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:40:28.888244340Z [2026-09-19 21:40:28.887] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:28.892533489Z [2026-09-19 21:40:28.892] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:40:38.932087193Z [2026-09-19 21:40:38.931] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:40:38.932168486Z [2026-09-19 21:40:38.931] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:38.935820956Z [2026-09-19 21:40:38.935] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:40:48.958027450Z [2026-09-19 21:40:48.957] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:40:48.958130440Z [2026-09-19 21:40:48.957] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:48.962277457Z [2026-09-19 21:40:48.961] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:40:58.976128889Z [2026-09-19 21:40:58.975] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:40:58.976199191Z [2026-09-19 21:40:58.975] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:40:58.980142472Z [2026-09-19 21:40:58.979] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:41:09.002050759Z [2026-09-19 21:41:09.001] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:41:09.002150664Z [2026-09-19 21:41:09.001] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:09.006229730Z [2026-09-19 21:41:09.005] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:41:19.019560285Z [2026-09-19 21:41:19.018] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:41:19.019763808Z [2026-09-19 21:41:19.018] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:19.022935194Z [2026-09-19 21:41:19.022] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:41:29.045096053Z [2026-09-19 21:41:29.044] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:41:29.045187168Z [2026-09-19 21:41:29.045] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:29.049652467Z [2026-09-19 21:41:29.048] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:41:39.078106421Z [2026-09-19 21:41:39.077] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:41:39.078201761Z [2026-09-19 21:41:39.077] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:39.082823604Z [2026-09-19 21:41:39.082] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:41:49.103086100Z [2026-09-19 21:41:49.102] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:41:49.103160198Z [2026-09-19 21:41:49.102] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:49.106884906Z [2026-09-19 21:41:49.106] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:41:59.124996314Z [2026-09-19 21:41:59.124] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:41:59.125067785Z [2026-09-19 21:41:59.124] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:41:59.129140554Z [2026-09-19 21:41:59.128] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:42:09.151072728Z [2026-09-19 21:42:09.150] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:42:09.151140573Z [2026-09-19 21:42:09.150] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:09.154887619Z [2026-09-19 21:42:09.154] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:42:19.186084956Z [2026-09-19 21:42:19.185] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:42:19.186168336Z [2026-09-19 21:42:19.185] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:19.189900687Z [2026-09-19 21:42:19.189] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:42:29.208731881Z [2026-09-19 21:42:29.208] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:42:29.208764256Z [2026-09-19 21:42:29.208] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:29.209833452Z [2026-09-19 21:42:29.209] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:42:39.242006272Z [2026-09-19 21:42:39.241] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:42:39.242042452Z [2026-09-19 21:42:39.241] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:39.244852112Z [2026-09-19 21:42:39.244] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:42:49.270965137Z [2026-09-19 21:42:49.270] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:42:49.270979689Z [2026-09-19 21:42:49.270] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:49.274424906Z [2026-09-19 21:42:49.274] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:42:59.285972382Z [2026-09-19 21:42:59.285] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:42:59.286043348Z [2026-09-19 21:42:59.285] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:42:59.292946519Z [2026-09-19 21:42:59.290] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:43:09.311003245Z [2026-09-19 21:43:09.310] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:43:09.311088329Z [2026-09-19 21:43:09.310] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:09.315221775Z [2026-09-19 21:43:09.315] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:43:19.324940691Z [2026-09-19 21:43:19.324] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:43:19.325020258Z [2026-09-19 21:43:19.324] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:19.329177396Z [2026-09-19 21:43:19.328] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:43:29.357702614Z [2026-09-19 21:43:29.355] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:43:29.357777953Z [2026-09-19 21:43:29.355] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:29.362890354Z [2026-09-19 21:43:29.362] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:43:39.386070713Z [2026-09-19 21:43:39.385] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:43:39.386136136Z [2026-09-19 21:43:39.385] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:39.390051945Z [2026-09-19 21:43:39.389] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:43:49.413055992Z [2026-09-19 21:43:49.412] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:43:49.413118650Z [2026-09-19 21:43:49.412] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:49.416820071Z [2026-09-19 21:43:49.416] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:43:59.429768650Z [2026-09-19 21:43:59.429] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:43:59.429787860Z [2026-09-19 21:43:59.429] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:43:59.431055461Z [2026-09-19 21:43:59.431] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:44:09.463998100Z [2026-09-19 21:44:09.463] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:44:09.464070743Z [2026-09-19 21:44:09.463] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:09.468015191Z [2026-09-19 21:44:09.467] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:44:19.490099985Z [2026-09-19 21:44:19.489] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:44:19.490172521Z [2026-09-19 21:44:19.489] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:19.495311624Z [2026-09-19 21:44:19.495] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:44:29.505990369Z [2026-09-19 21:44:29.505] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:44:29.506012090Z [2026-09-19 21:44:29.505] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:29.507143310Z [2026-09-19 21:44:29.507] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:44:39.556106342Z [2026-09-19 21:44:39.555] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:44:39.556158309Z [2026-09-19 21:44:39.555] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:39.559874625Z [2026-09-19 21:44:39.559] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:44:49.570733733Z [2026-09-19 21:44:49.570] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:44:49.570752276Z [2026-09-19 21:44:49.570] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:49.572014438Z [2026-09-19 21:44:49.571] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:44:59.597103237Z [2026-09-19 21:44:59.596] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:44:59.597163991Z [2026-09-19 21:44:59.596] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:44:59.601667369Z [2026-09-19 21:44:59.601] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:45:09.639051532Z [2026-09-19 21:45:09.638] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:45:09.639136255Z [2026-09-19 21:45:09.638] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:09.643383166Z [2026-09-19 21:45:09.643] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:45:19.665061398Z [2026-09-19 21:45:19.664] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:45:19.665124789Z [2026-09-19 21:45:19.664] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:19.668964965Z [2026-09-19 21:45:19.668] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:45:29.687800562Z [2026-09-19 21:45:29.687] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:45:29.687839581Z [2026-09-19 21:45:29.687] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:29.689056624Z [2026-09-19 21:45:29.688] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:45:39.716968602Z [2026-09-19 21:45:39.716] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:45:39.717032161Z [2026-09-19 21:45:39.716] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:39.720662737Z [2026-09-19 21:45:39.720] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:45:49.731993000Z [2026-09-19 21:45:49.731] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:45:49.732049565Z [2026-09-19 21:45:49.731] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:49.736409777Z [2026-09-19 21:45:49.736] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:45:59.753058514Z [2026-09-19 21:45:59.752] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:45:59.753143667Z [2026-09-19 21:45:59.752] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:45:59.756982143Z [2026-09-19 21:45:59.756] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:46:09.793988591Z [2026-09-19 21:46:09.793] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:46:09.794046452Z [2026-09-19 21:46:09.793] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:09.798330019Z [2026-09-19 21:46:09.798] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:46:19.807038171Z [2026-09-19 21:46:19.806] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:46:19.807100630Z [2026-09-19 21:46:19.806] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:19.811082529Z [2026-09-19 21:46:19.810] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:46:29.828037737Z [2026-09-19 21:46:29.827] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:46:29.828133413Z [2026-09-19 21:46:29.827] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:29.832024990Z [2026-09-19 21:46:29.831] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:46:39.852908810Z [2026-09-19 21:46:39.852] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:46:39.852961417Z [2026-09-19 21:46:39.852] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:39.855884684Z [2026-09-19 21:46:39.855] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:46:49.861907793Z [2026-09-19 21:46:49.861] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:46:49.861958586Z [2026-09-19 21:46:49.861] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:49.864783218Z [2026-09-19 21:46:49.864] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:46:59.878517073Z [2026-09-19 21:46:59.877] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:46:59.878661360Z [2026-09-19 21:46:59.877] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:46:59.881735417Z [2026-09-19 21:46:59.881] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:47:09.888104750Z [2026-09-19 21:47:09.887] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:47:09.888173863Z [2026-09-19 21:47:09.887] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:09.892159013Z [2026-09-19 21:47:09.891] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:47:19.904035952Z [2026-09-19 21:47:19.903] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:47:19.904092566Z [2026-09-19 21:47:19.903] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:19.909205431Z [2026-09-19 21:47:19.907] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:47:29.929037807Z [2026-09-19 21:47:29.928] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:47:29.929088657Z [2026-09-19 21:47:29.928] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:29.933150502Z [2026-09-19 21:47:29.932] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:47:39.974026236Z [2026-09-19 21:47:39.973] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:47:39.974087455Z [2026-09-19 21:47:39.973] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:39.978117995Z [2026-09-19 21:47:39.977] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:47:50.006081641Z [2026-09-19 21:47:50.005] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:47:50.006170358Z [2026-09-19 21:47:50.005] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:47:50.010151750Z [2026-09-19 21:47:50.009] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:48:00.031823041Z [2026-09-19 21:48:00.031] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:48:00.031870581Z [2026-09-19 21:48:00.031] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:00.033091218Z [2026-09-19 21:48:00.032] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:48:10.057802424Z [2026-09-19 21:48:10.057] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:48:10.057844872Z [2026-09-19 21:48:10.057] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:10.059495700Z [2026-09-19 21:48:10.059] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:48:20.079071646Z [2026-09-19 21:48:20.078] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:48:20.079138737Z [2026-09-19 21:48:20.078] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:20.082967767Z [2026-09-19 21:48:20.082] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:48:30.109059439Z [2026-09-19 21:48:30.108] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:48:30.109151631Z [2026-09-19 21:48:30.108] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:30.113148921Z [2026-09-19 21:48:30.112] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:48:40.134982033Z [2026-09-19 21:48:40.134] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:48:40.135036672Z [2026-09-19 21:48:40.134] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:40.137405878Z [2026-09-19 21:48:40.137] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:48:50.154088692Z [2026-09-19 21:48:50.153] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:48:50.154181240Z [2026-09-19 21:48:50.153] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:48:50.158215418Z [2026-09-19 21:48:50.157] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:49:00.184199354Z [2026-09-19 21:49:00.183] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:49:00.184266054Z [2026-09-19 21:49:00.183] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:00.188116096Z [2026-09-19 21:49:00.187] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:49:10.215067878Z [2026-09-19 21:49:10.214] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:49:10.215172178Z [2026-09-19 21:49:10.214] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:10.220078209Z [2026-09-19 21:49:10.219] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:49:20.255180575Z [2026-09-19 21:49:20.254] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:49:20.255263536Z [2026-09-19 21:49:20.254] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:20.259281141Z [2026-09-19 21:49:20.259] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:49:30.312072914Z [2026-09-19 21:49:30.311] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:49:30.312169410Z [2026-09-19 21:49:30.311] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:30.316167796Z [2026-09-19 21:49:30.315] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:49:40.401813997Z [2026-09-19 21:49:40.401] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:49:40.401854027Z [2026-09-19 21:49:40.401] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:40.403701915Z [2026-09-19 21:49:40.403] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:49:50.423983800Z [2026-09-19 21:49:50.423] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:49:50.424033395Z [2026-09-19 21:49:50.423] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:49:50.427958877Z [2026-09-19 21:49:50.427] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:50:00.447038974Z [2026-09-19 21:50:00.446] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:50:00.447085181Z [2026-09-19 21:50:00.446] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:00.451244097Z [2026-09-19 21:50:00.450] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:50:05.145043392Z [2026-09-19 21:50:05.144] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-uecm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:50:05.145109475Z [2026-09-19 21:50:05.145] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:05.147481241Z [2026-09-19 21:50:05.147] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:50:05.147535236Z [2026-09-19 21:50:05.147] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"16","validityPeriod":100000}
+2026-09-19T19:50:05.148764577Z [2026-09-19 21:50:05.148] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-uecm/v1/imsi-262100000000031/registrations/smf-registrations/1, method=DELETE
+2026-09-19T19:50:05.148810619Z [2026-09-19 21:50:05.148] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:05.159040338Z [2026-09-19 21:50:05.159] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:50:05.161448412Z [2026-09-19 21:50:05.161] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:50:05.161501736Z [2026-09-19 21:50:05.161] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:05.163653720Z [2026-09-19 21:50:05.163] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:50:05.163696353Z [2026-09-19 21:50:05.163] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"17","validityPeriod":100000}
+2026-09-19T19:50:05.165028799Z [2026-09-19 21:50:05.164] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sdm-subscriptions/1, method=DELETE
+2026-09-19T19:50:05.165090361Z [2026-09-19 21:50:05.165] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:05.170607960Z [2026-09-19 21:50:05.170] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:50:10.479003969Z [2026-09-19 21:50:10.478] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:50:10.479045484Z [2026-09-19 21:50:10.478] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:10.482901723Z [2026-09-19 21:50:10.482] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:50:20.503764770Z [2026-09-19 21:50:20.503] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:50:20.503782007Z [2026-09-19 21:50:20.503] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:20.504956329Z [2026-09-19 21:50:20.504] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:50:30.517005360Z [2026-09-19 21:50:30.516] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:50:30.517081001Z [2026-09-19 21:50:30.516] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:30.520794217Z [2026-09-19 21:50:30.520] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:50:40.540046268Z [2026-09-19 21:50:40.539] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:50:40.540109963Z [2026-09-19 21:50:40.539] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:40.544317033Z [2026-09-19 21:50:40.544] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:50:50.564046462Z [2026-09-19 21:50:50.563] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:50:50.564113763Z [2026-09-19 21:50:50.563] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:50:50.568429201Z [2026-09-19 21:50:50.568] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:51:00.590070413Z [2026-09-19 21:51:00.589] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:51:00.590170196Z [2026-09-19 21:51:00.589] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:00.594074612Z [2026-09-19 21:51:00.593] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:51:10.609022436Z [2026-09-19 21:51:10.608] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:51:10.609080919Z [2026-09-19 21:51:10.608] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:10.612872106Z [2026-09-19 21:51:10.612] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:51:20.636777211Z [2026-09-19 21:51:20.636] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:51:20.636803327Z [2026-09-19 21:51:20.636] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:20.638278852Z [2026-09-19 21:51:20.638] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:51:30.663961841Z [2026-09-19 21:51:30.663] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:51:30.663972525Z [2026-09-19 21:51:30.663] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:30.665003314Z [2026-09-19 21:51:30.664] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:51:40.686007700Z [2026-09-19 21:51:40.685] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:51:40.686058635Z [2026-09-19 21:51:40.685] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:40.689313714Z [2026-09-19 21:51:40.688] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:51:50.703111368Z [2026-09-19 21:51:50.702] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:51:50.703191167Z [2026-09-19 21:51:50.702] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:51:50.707365235Z [2026-09-19 21:51:50.707] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:52:00.722860646Z [2026-09-19 21:52:00.722] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:52:00.722928012Z [2026-09-19 21:52:00.722] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:00.727805907Z [2026-09-19 21:52:00.727] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:52:10.739174697Z [2026-09-19 21:52:10.738] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:52:10.739230372Z [2026-09-19 21:52:10.738] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:10.743544090Z [2026-09-19 21:52:10.743] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:52:16.706351683Z [2026-09-19 21:52:16.706] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=AUSF&requester-nf-type=AMF&service-names=nausf-auth&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T19:52:16.706688837Z [2026-09-19 21:52:16.706] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:16.716938556Z [2026-09-19 21:52:16.716] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:16.717003947Z [2026-09-19 21:52:16.716] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"ausfInfo":{"groupId":"oai-ausf-testgroupid","routingIndicators":["0210","9876"],"supiRanges":[{"end":"","pattern":"209238210938","start":"q0930j0c80283ncjf"}]},"capacity":100,"fqdn":"ausf.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.133"],"json_data":null,"nfInstanceId":"04369ad6-a863-4b50-929c-c7ae514b5281","nfInstanceName":"OAI-AUSF","nfServices":[],"nfStatus":"REGISTERED","nfType":"AUSF","priority":1}],"searchId":"18","validityPeriod":100000}
+2026-09-19T19:52:16.721810115Z [2026-09-19 21:52:16.721] [sepp_app] [info] Forwarding NF service request: authority=ausf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nausf-auth/v1/ue-authentications, method=POST
+2026-09-19T19:52:16.721942279Z [2026-09-19 21:52:16.721] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:16.757765710Z [2026-09-19 21:52:16.757] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:16.757831214Z [2026-09-19 21:52:16.757] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"5gAuthData":{"autn":"d97a8448f92f8000d4d3c3707d1cb497","hxresStar":"fe686bba0259670a5b98c814b13b783f","rand":"34886d57ab0f9826113d44feafa1e9b5"},"_links":{"5g-aka":{"href":"http://192.168.73.133:8080/nausf-auth/v1/ue-authentications/d97a8448f92f8000d4d3c3707d1cb497/5g-aka-confirmation"}},"authType":"5G_AKA"}
+2026-09-19T19:52:16.766342291Z [2026-09-19 21:52:16.766] [sepp_app] [info] Forwarding NF service request: authority=ausf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nausf-auth/v1/ue-authentications/d97a8448f92f8000d4d3c3707d1cb497/5g-aka-confirmation, method=PUT
+2026-09-19T19:52:16.766515465Z [2026-09-19 21:52:16.766] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:16.792655171Z [2026-09-19 21:52:16.792] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:16.792864534Z [2026-09-19 21:52:16.792] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"authResult":"AUTHENTICATION_SUCCESS","kseaf":"b0f68beb83639de3ca78fdf774cf041e62a1d3ed280638340889b6dc024d8634","supi":"imsi-262100000000031"}
+2026-09-19T19:52:16.808207472Z [2026-09-19 21:52:16.807] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=AMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T19:52:16.808349996Z [2026-09-19 21:52:16.808] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:16.817241864Z [2026-09-19 21:52:16.817] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:16.817472978Z [2026-09-19 21:52:16.817] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"19","validityPeriod":100000}
+2026-09-19T19:52:16.822790574Z [2026-09-19 21:52:16.822] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/nssai?plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T19:52:16.823091502Z [2026-09-19 21:52:16.822] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:16.836722449Z [2026-09-19 21:52:16.836] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:16.837262254Z [2026-09-19 21:52:16.836] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"defaultSingleNssais":[{"sd":"000001","sst":1},{"sd":"00007b","sst":222}]}
+2026-09-19T19:52:17.050885186Z [2026-09-19 21:52:17.050] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=AMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}], method=GET
+2026-09-19T19:52:17.050903164Z [2026-09-19 21:52:17.050] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.054606154Z [2026-09-19 21:52:17.054] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.054678782Z [2026-09-19 21:52:17.054] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"20","validityPeriod":100000}
+2026-09-19T19:52:17.056497352Z [2026-09-19 21:52:17.056] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/smf-select-data?plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T19:52:17.056569090Z [2026-09-19 21:52:17.056] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.061058637Z [2026-09-19 21:52:17.060] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.061072434Z [2026-09-19 21:52:17.060] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"subscribedSnssaiInfos":{"222-00007B":{"dnnInfos":[{"defaultDnnIndicator":true,"dnn":"oai","lboRoamingAllowed":true}]}}}
+2026-09-19T19:52:17.067868995Z [2026-09-19 21:52:17.067] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:52:17.067930690Z [2026-09-19 21:52:17.067] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.071724668Z [2026-09-19 21:52:17.071] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.071738610Z [2026-09-19 21:52:17.071] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"21","validityPeriod":100000}
+2026-09-19T19:52:17.073428351Z [2026-09-19 21:52:17.073] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sm-data?single-nssai={"sst":222,"sd":"00007b"}&dnn=oai&plmn-id={"mcc":"208","mnc":"14"}, method=GET
+2026-09-19T19:52:17.073446130Z [2026-09-19 21:52:17.073] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.078808341Z [2026-09-19 21:52:17.078] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.078823242Z [2026-09-19 21:52:17.078] [sepp_app] [debug] PRINS: Decrypted JOSE response: [{"dnnConfigurations":{"oai":{"5gQosProfile":{"5qi":6,"arp":{"preemptCap":"NOT_PREEMPT","preemptVuln":"NOT_PREEMPTABLE","priorityLevel":1},"priorityLevel":1},"pduSessionTypes":{"defaultSessionType":"IPV4"},"sessionAmbr":{"downlink":"100Mbps","uplink":"100Mbps"},"sscModes":{"defaultSscMode":"SSC_MODE_1"}}},"singleNssai":{"sd":"00007b","sst":222}}]
+2026-09-19T19:52:17.083001167Z [2026-09-19 21:52:17.082] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-sdm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:52:17.083105545Z [2026-09-19 21:52:17.083] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.086886328Z [2026-09-19 21:52:17.086] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.086900217Z [2026-09-19 21:52:17.086] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"22","validityPeriod":100000}
+2026-09-19T19:52:17.088546026Z [2026-09-19 21:52:17.088] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-sdm/v1/imsi-262100000000031/sdm-subscriptions, method=POST
+2026-09-19T19:52:17.088683031Z [2026-09-19 21:52:17.088] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.104164632Z [2026-09-19 21:52:17.103] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.104299792Z [2026-09-19 21:52:17.104] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"callbackReference":"192.168.71.138:8080/nsmf-callback/v1imsi-262100000000031/sdm-notification","dnn":"oai","monitoredResourceUris":["http://udm.5gc.mnc10.mcc262.3gppnetwork.org:8080/nudm-sdm/v1/imsi-262100000000031/sm-data"],"nfInstanceId":"902a4e6d-b06b-4565-b810-b731126d41d7","plmnId":{"mcc":"208","mnc":"14"},"singleNssai":{"sd":"00007b","sst":222},"subscriptionId":"1"}
+2026-09-19T19:52:17.135099385Z [2026-09-19 21:52:17.134] [sepp_app] [info] Forwarding NF service request: authority=nrf.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nnrf-disc/v1/nf-instances?target-nf-type=UDM&requester-nf-type=SMF&service-names=nudm-uecm&target-plmn-list=[{"mcc":"262","mnc":"10"}]&requester-plmn-list=[{"mcc":"208","mnc":"14"}]&supi=imsi-262100000000031, method=GET
+2026-09-19T19:52:17.135138104Z [2026-09-19 21:52:17.135] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.141304966Z [2026-09-19 21:52:17.141] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.141327328Z [2026-09-19 21:52:17.141] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"nfInstances":[{"capacity":100,"fqdn":"udm.5gc.mnc10.mcc262.3gppnetwork.org","heartBeatTimer":10,"ipv4Addresses":["192.168.73.135"],"json_data":null,"nfInstanceId":"ce2b3314-5173-46fd-b3d3-9ef65685dbea","nfInstanceName":"OAI-UDM","nfServices":[],"nfStatus":"REGISTERED","nfType":"UDM","priority":1,"udmInfo":{"externalGroupIdentifiersRanges":[],"gpsiRanges":[],"groupId":"","internalGroupIdentifiersRanges":[],"routingIndicators":[],"supiRanges":[]}}],"searchId":"23","validityPeriod":100000}
+2026-09-19T19:52:17.143612899Z [2026-09-19 21:52:17.143] [sepp_app] [info] Forwarding NF service request: authority=udm.5gc.mnc10.mcc262.3gppnetwork.org:8080, path=/nudm-uecm/v1/imsi-262100000000031/registrations/smf-registrations/1, method=PUT
+2026-09-19T19:52:17.143646019Z [2026-09-19 21:52:17.143] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:17.152807878Z [2026-09-19 21:52:17.152] [sepp_app] [info] PRINS: Received HTTP response status: 200
+2026-09-19T19:52:17.152864038Z [2026-09-19 21:52:17.152] [sepp_app] [debug] PRINS: Decrypted JOSE response: {"dnn":"oai","pduSessionId":1,"plmnId":{"mcc":"208","mnc":"14"},"singleNssai":{"sd":"00007b","sst":222},"smfInstanceId":"902a4e6d-b06b-4565-b810-b731126d41d7"}
+2026-09-19T19:52:20.755103977Z [2026-09-19 21:52:20.754] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:52:20.755124017Z [2026-09-19 21:52:20.754] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:20.756257108Z [2026-09-19 21:52:20.756] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:52:30.767914943Z [2026-09-19 21:52:30.766] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:52:30.767991463Z [2026-09-19 21:52:30.766] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:30.772902138Z [2026-09-19 21:52:30.772] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:52:40.786065403Z [2026-09-19 21:52:40.785] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:52:40.786129767Z [2026-09-19 21:52:40.785] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:40.790317246Z [2026-09-19 21:52:40.790] [sepp_sbi] [debug] NF heartbeat request successful
+2026-09-19T19:52:50.806943087Z [2026-09-19 21:52:50.806] [sepp_sbi] [info] Sending NF heartbeat request
+2026-09-19T19:52:50.807036758Z [2026-09-19 21:52:50.806] [sepp_client] [debug] Send a simple HTTP request
+2026-09-19T19:52:50.812001450Z [2026-09-19 21:52:50.811] [sepp_sbi] [debug] NF heartbeat request successful
