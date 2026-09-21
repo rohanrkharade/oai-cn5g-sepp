@@ -208,23 +208,23 @@ rtt min/avg/max/mdev = 24.443/27.509/32.204/3.370 ms
 
 | Artifact | Visited PLMN (A) | Home PLMN (B) |
 |---|---|---|
-| AMF | [AMF-A](../scripts/test/logs/oai-amf-A.txt) | [AMF-B](../scripts/test/logs/oai-amf-B.txt) |
-| SMF | [SMF-A](../scripts/test/logs/oai-smf-A.txt) | [SMF-B](../scripts/test/logs/oai-smf-B.txt) |
-| UPF | [UPF-A](../scripts/test/logs/oai-upf-A.txt) | [UPF-B](../scripts/test/logs/oai-upf-B.txt) |
-| NRF | [NRF-A](../scripts/test/logs/oai-nrf-A.txt) | [NRF-B](../scripts/test/logs/oai-nrf-B.txt) |
-| AUSF | [AUSF-A](../scripts/test/logs/oai-ausf-A.txt) | [AUSF-B](../scripts/test/logs/oai-ausf-B.txt) |
-| UDM | [UDM-A](../scripts/test/logs/oai-udm-A.txt) | [UDM-B](../scripts/test/logs/oai-udm-B.txt) |
-| UDR | [UDR-A](../scripts/test/logs/oai-udr-A.txt) | [UDR-B](../scripts/test/logs/oai-udr-B.txt) |
-| SEPP | [SEPP-A](../scripts/test/logs/oai-sepp-A.txt) | [SEPP-B](../scripts/test/logs/oai-sepp-B.txt) |
-| Roaming UE | [UE log](../scripts/test/logs/ueransim-vplmnA.txt) | — |
-| LBO test PCAP | [Download capture](../scripts/test/logs/oai-5gc-lbo-roaming.pcap) | Both PLMNs |
+| AMF | [AMF-A](../scripts/test/logs-lbo/oai-amf-A.txt) | [AMF-B](../scripts/test/logs-lbo/oai-amf-B.txt) |
+| SMF | [SMF-A](../scripts/test/logs-lbo/oai-smf-A.txt) | [SMF-B](../scripts/test/logs-lbo/oai-smf-B.txt) |
+| UPF | [UPF-A](../scripts/test/logs-lbo/oai-upf-A.txt) | [UPF-B](../scripts/test/logs-lbo/oai-upf-B.txt) |
+| NRF | [NRF-A](../scripts/test/logs-lbo/oai-nrf-A.txt) | [NRF-B](../scripts/test/logs-lbo/oai-nrf-B.txt) |
+| AUSF | [AUSF-A](../scripts/test/logs-lbo/oai-ausf-A.txt) | [AUSF-B](../scripts/test/logs-lbo/oai-ausf-B.txt) |
+| UDM | [UDM-A](../scripts/test/logs-lbo/oai-udm-A.txt) | [UDM-B](../scripts/test/logs-lbo/oai-udm-B.txt) |
+| UDR | [UDR-A](../scripts/test/logs-lbo/oai-udr-A.txt) | [UDR-B](../scripts/test/logs-lbo/oai-udr-B.txt) |
+| SEPP | [SEPP-A](../scripts/test/logs-lbo/oai-sepp-A.txt) | [SEPP-B](../scripts/test/logs-lbo/oai-sepp-B.txt) |
+| Roaming UE | [UE log](../scripts/test/logs-lbo/ueransim-vplmnA.txt) | — |
+| LBO test PCAP | [Download capture](../scripts/test/logs-lbo/oai-5gc-lbo-roaming.pcap) | Both PLMNs |
 
-[All logs](../scripts/test/logs/) · [Test details](../scripts/test/logs/results.json)
+[All logs](../scripts/test/logs-lbo/) · [Test details](../scripts/test/logs-lbo/results.json)
 
 To refresh complete logs, wait for AMF-A's periodic table to show `5GMM-REGISTERED` after the traffic test, then run:
 
 ```bash
-python3 capture_lbo_logs.py --output logs
+python3 capture_lbo_logs.py --output logs-lbo
 ```
 
 
@@ -234,3 +234,9 @@ python3 capture_lbo_logs.py --output logs
 ```bash
 docker compose -f docker-compose-basic-nrf-lbo-roaming.yaml down
 ```
+
+## 6. Home-routed roaming
+
+When the home subscription does not allow LBO for the DNN (`lboRoamingAllowed: false`), the same UE gets a **home-routed** PDU session instead: a V-SMF/V-UPF in the visited PLMN, an H-SMF/H-UPF in the home PLMN, N16 through the SEPPs and an N9 tunnel between the UPFs. The UE address then comes from the home pool and traffic breaks out in the home PLMN.
+
+See the [home-routed roaming tutorial](./HR_ROAMING_TEST.md) (`docker-compose-basic-nrf-hr-roaming.yaml`).

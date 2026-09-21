@@ -1,6 +1,7 @@
 from pathlib import Path
 import subprocess,yaml,re,json,time
-base=Path(__file__).resolve().parent;compose=base/'docker-compose-basic-nrf-lbo-roaming.yaml'
+import sys
+base=Path(__file__).resolve().parent;compose=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else base/'docker-compose-basic-nrf-lbo-roaming.yaml'
 compose_cmd=['docker','compose'] if subprocess.run(['docker','compose','version'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0 else ['docker-compose']
 c=yaml.safe_load(compose.read_text());names=['oai-sepp-A','oai-sepp-B'];shared=set(c['services'][names[0]]['networks']) & set(c['services'][names[1]]['networks']);assert len(shared)==1
 roaming=shared.pop();changed=False

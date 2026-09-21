@@ -1,0 +1,178 @@
+{
+  "compose": "docker-compose-basic-nrf-hr-roaming.yaml",
+  "since": null,
+  "until": "2026-09-21T22:22:04.829398+00:00",
+  "containers": [
+    {
+      "service": "mysql-A",
+      "container": "mysql-A",
+      "image": "mysql:9.6.0",
+      "image_id": "sha256:f4bf110498531f91e80936e0181b8b63bac636481065a63df2e63e1aac2b1548",
+      "started_at": "2026-09-21T22:19:11.986135178Z",
+      "running": true,
+      "health": "not configured"
+    },
+    {
+      "service": "oai-nrf-A",
+      "container": "nrf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-nrf:roaming-hr",
+      "image_id": "sha256:fc90e046b259bc642b48fc3d57e5cefa64f62eee971bb23c066c44b3be231f0d",
+      "started_at": "2026-09-21T22:19:11.984807518Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udr-A",
+      "container": "udr.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-udr:roaming-hr",
+      "image_id": "sha256:bf6027cc55c953dede64c80dc915aa5782739372608bf25fad1ae186e9e3c5b2",
+      "started_at": "2026-09-21T22:19:12.526038844Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udm-A",
+      "container": "udm.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-udm:roaming-hr",
+      "image_id": "sha256:5c7b2dc51094748a65086a44a5d21605f14b0f0f41e81f8666a47d812aca3b8f",
+      "started_at": "2026-09-21T22:19:13.322123883Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-ausf-A",
+      "container": "ausf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-ausf:roaming-hr",
+      "image_id": "sha256:acc82e8078c5aaa42d871f86008b39a0f6929999ac5440b01c2c354600d077f2",
+      "started_at": "2026-09-21T22:19:14.597633156Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-amf-A",
+      "container": "amf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-amf:roaming-hr",
+      "image_id": "sha256:3c4af9baf282d24e9815c47fa7ee40dea81cfe83c2e4d1d7f0862745134e7c61",
+      "started_at": "2026-09-21T22:19:15.453926552Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-smf-A",
+      "container": "smf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-smf:roaming-hr",
+      "image_id": "sha256:1188333d89102ae42b8dd1e778e99ad176ab2bd080c4d9b57e35e9cc770b316a",
+      "started_at": "2026-09-21T22:19:15.988312279Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-upf-A",
+      "container": "upf.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-upf:roaming-hr",
+      "image_id": "sha256:b01add6e875e11a350b9e387b05abf95af790dfe05f71b6c7973615862c55858",
+      "started_at": "2026-09-21T22:19:16.353731552Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-sepp-A",
+      "container": "sepp.5gc.mnc14.mcc208.3gppnetwork.org",
+      "image": "oai-sepp:roaming-hr",
+      "image_id": "sha256:5defdd2e24ab035b1087607d0d4bb2dda0ce7051c77faf01aba737ecff2e2c41",
+      "started_at": "2026-09-21T22:19:12.503562603Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "ueransim-vplmnA",
+      "container": "ue-plmnB-roaming-A",
+      "image": "ueransim:roaming-lbo",
+      "image_id": "sha256:f78f07be75847549345abb28ec7defab30ebfe0752f6323c7a2f2a9c63c5d08e",
+      "started_at": "2026-09-21T22:19:16.666196259Z",
+      "running": true,
+      "health": "not configured"
+    },
+    {
+      "service": "mysql-B",
+      "container": "mysql-B",
+      "image": "mysql:9.6.0",
+      "image_id": "sha256:f4bf110498531f91e80936e0181b8b63bac636481065a63df2e63e1aac2b1548",
+      "started_at": "2026-09-21T22:19:11.963425901Z",
+      "running": true,
+      "health": "not configured"
+    },
+    {
+      "service": "oai-nrf-B",
+      "container": "nrf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-nrf:roaming-hr",
+      "image_id": "sha256:fc90e046b259bc642b48fc3d57e5cefa64f62eee971bb23c066c44b3be231f0d",
+      "started_at": "2026-09-21T22:19:11.981999424Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udr-B",
+      "container": "udr.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-udr:roaming-hr",
+      "image_id": "sha256:bf6027cc55c953dede64c80dc915aa5782739372608bf25fad1ae186e9e3c5b2",
+      "started_at": "2026-09-21T22:19:12.515074853Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-udm-B",
+      "container": "udm.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-udm:roaming-hr",
+      "image_id": "sha256:5c7b2dc51094748a65086a44a5d21605f14b0f0f41e81f8666a47d812aca3b8f",
+      "started_at": "2026-09-21T22:19:13.184018668Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-ausf-B",
+      "container": "ausf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-ausf:roaming-hr",
+      "image_id": "sha256:acc82e8078c5aaa42d871f86008b39a0f6929999ac5440b01c2c354600d077f2",
+      "started_at": "2026-09-21T22:19:14.616841967Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-amf-B",
+      "container": "amf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-amf:roaming-hr",
+      "image_id": "sha256:3c4af9baf282d24e9815c47fa7ee40dea81cfe83c2e4d1d7f0862745134e7c61",
+      "started_at": "2026-09-21T22:19:15.448320747Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-smf-B",
+      "container": "smf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-smf:roaming-hr",
+      "image_id": "sha256:1188333d89102ae42b8dd1e778e99ad176ab2bd080c4d9b57e35e9cc770b316a",
+      "started_at": "2026-09-21T22:19:15.994900146Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-upf-B",
+      "container": "upf.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-upf:roaming-hr",
+      "image_id": "sha256:b01add6e875e11a350b9e387b05abf95af790dfe05f71b6c7973615862c55858",
+      "started_at": "2026-09-21T22:19:16.362629235Z",
+      "running": true,
+      "health": "healthy"
+    },
+    {
+      "service": "oai-sepp-B",
+      "container": "sepp.5gc.mnc10.mcc262.3gppnetwork.org",
+      "image": "oai-sepp:roaming-hr",
+      "image_id": "sha256:5defdd2e24ab035b1087607d0d4bb2dda0ce7051c77faf01aba737ecff2e2c41",
+      "started_at": "2026-09-21T22:19:12.531438729Z",
+      "running": true,
+      "health": "healthy"
+    }
+  ]
+}

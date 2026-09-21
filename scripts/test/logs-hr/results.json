@@ -1,0 +1,25 @@
+{
+  "tested_at_utc": "2026-09-21T22:20:12Z",
+  "scenario": "home-routed roaming, UE of 262/10 in 208/14",
+  "registration": "PASS",
+  "hr_pdu_session": "PASS",
+  "hr_data_traffic": {"sent": 3, "received": 3, "loss_percent": 0},
+  "ue_ipv4": "12.2.1.130",
+  "ue_ipv4_pool": "home PLMN 12.2.1.128/25 (H-SMF)",
+  "n9_tunnel": {"v_upf": "192.168.71.139 TEID 0x80000001", "h_upf": "192.168.73.139 TEID 0x1"},
+  "n6_breakout": "H-UPF 192.168.73.139 (SNAT)",
+  "release_via_n16": "PASS",
+  "re_establishment": "PASS",
+  "supi": "imsi-262100000000031",
+  "dnn": "oai",
+  "slice": {"sst": 222, "sd": 123},
+  "pcap": "oai-5gc-hr-roaming.pcap",
+  "captured_packets": 5862,
+  "packet_counts_by_filter": {
+    "NGAP/SCTP": 48,
+    "PFCP": 84,
+    "GTP-U (N3 + N9)": 24,
+    "GTP-U N9 (192.168.71.139 <-> 192.168.73.139)": 12,
+    "ICMP (N6 at H-UPF)": 12
+  }
+}
